@@ -1,1059 +1,1037 @@
-2022-07-13 04:15:05,511 root         INFO     starting...
-2022-07-13 04:15:05,512 root         DEBUG    args are : Namespace(branches=['develop'], log='info', number=1000, repo_path=PosixPath('/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts'))
-2022-07-13 04:15:05,513 root         DEBUG    pulling artifacts
-2022-07-13 04:15:06,927 root         DEBUG    cloning summaries
-2022-07-13 04:15:06,927 root         DEBUG    cloning git@github.com:esmf-org/esmf-test-summary.git into /tmp/esmf_branch_summary_space
-2022-07-13 04:15:07,718 root         DEBUG    pulling summaries
-2022-07-13 04:15:08,127 root         INFO     itterating over 1 branches in 13 machines over 1000 most recent commits
-2022-07-13 04:15:08,127 root         INFO     generating summaries for develop [acorn]
-2022-07-13 04:15:08,127 root         DEBUG    checking out acorn
-2022-07-13 04:15:34,939 root         DEBUG    pulling from acorn
-2022-07-13 04:15:35,597 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
-2022-07-13 04:15:35,597 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:15:35,597 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:35,682 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:15:35,709 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:15:35,764 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:15:35,775 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:15:35,855 root         DEBUG    matching logs: 4
-2022-07-13 04:15:35,856 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:35,897 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:15:35,901 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:15:35,908 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:15:35,910 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:15:35,953 root         DEBUG    matching summaries: 4
-2022-07-13 04:15:36,001 root         DEBUG    finished reading logs
-2022-07-13 04:15:36,002 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/g/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:36,002 root         ERROR    message: invalid literal for int() with base 10: 'unit'
-2022-07-13 04:15:36,002 root         ERROR    line being parsed: unit tests did not complete
-2022-07-13 04:15:36,002 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/g/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:36,002 root         ERROR    message: invalid literal for int() with base 10: 'system'
-2022-07-13 04:15:36,002 root         ERROR    line being parsed: system tests did not complete
-2022-07-13 04:15:36,002 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/g/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:36,002 root         ERROR    message: invalid literal for int() with base 10: 'No'
-2022-07-13 04:15:36,002 root         ERROR    line being parsed: No examples ran
-2022-07-13 04:15:40,765 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/O/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:40,765 root         ERROR    message: invalid literal for int() with base 10: 'unit'
-2022-07-13 04:15:40,765 root         ERROR    line being parsed: unit tests did not complete
-2022-07-13 04:15:40,766 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/O/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:40,766 root         ERROR    message: invalid literal for int() with base 10: 'system'
-2022-07-13 04:15:40,766 root         ERROR    line being parsed: system tests did not complete
-2022-07-13 04:15:40,766 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/O/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:40,766 root         ERROR    message: invalid literal for int() with base 10: 'No'
-2022-07-13 04:15:40,766 root         ERROR    line being parsed: No examples ran
-2022-07-13 04:15:41,186 root         DEBUG    checking out summary
-2022-07-13 04:15:41,186 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 4
-2022-07-13 04:15:41,224 root         INFO     processed [4] rows
-2022-07-13 04:15:41,225 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:15:41,228 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:15:41,243 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:15:41,257 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:15:41,257 root         DEBUG    adding all modified files in summary
-2022-07-13 04:15:41,265 root         DEBUG    committing to summary
-2022-07-13 04:15:41,270 root         INFO     On branch main
+2022-07-13 05:15:08,712 root         INFO     starting...
+2022-07-13 05:15:08,712 root         DEBUG    args are : Namespace(branches=['develop'], log='info', number=1000, repo_path=PosixPath('/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts'))
+2022-07-13 05:15:08,722 root         DEBUG    pulling artifacts
+2022-07-13 05:15:23,605 root         DEBUG    cloning summaries
+2022-07-13 05:15:23,605 root         DEBUG    cloning git@github.com:esmf-org/esmf-test-summary.git into /tmp/esmf_branch_summary_space
+2022-07-13 05:15:24,403 root         DEBUG    pulling summaries
+2022-07-13 05:15:24,804 root         INFO     itterating over 1 branches in 13 machines over 1000 most recent commits
+2022-07-13 05:15:24,804 root         INFO     generating summaries for develop [acorn]
+2022-07-13 05:15:24,805 root         DEBUG    checking out acorn
+2022-07-13 05:15:46,085 root         DEBUG    pulling from acorn
+2022-07-13 05:15:46,679 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
+2022-07-13 05:15:46,679 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:15:46,679 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:46,750 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:15:46,776 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:15:46,831 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:15:46,842 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:15:46,919 root         DEBUG    matching logs: 4
+2022-07-13 05:15:46,919 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:46,960 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:15:46,964 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:15:46,971 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:15:46,973 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:15:47,017 root         DEBUG    matching summaries: 4
+2022-07-13 05:15:47,065 root         DEBUG    finished reading logs
+2022-07-13 05:15:51,526 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/g/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:51,526 root         ERROR    message: invalid literal for int() with base 10: 'unit'
+2022-07-13 05:15:51,526 root         ERROR    line being parsed: unit tests did not complete
+2022-07-13 05:15:51,526 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/g/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:51,526 root         ERROR    message: invalid literal for int() with base 10: 'system'
+2022-07-13 05:15:51,526 root         ERROR    line being parsed: system tests did not complete
+2022-07-13 05:15:51,526 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/g/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:51,527 root         ERROR    message: invalid literal for int() with base 10: 'No'
+2022-07-13 05:15:51,527 root         ERROR    line being parsed: No examples ran
+2022-07-13 05:15:51,880 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/O/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:51,880 root         ERROR    message: invalid literal for int() with base 10: 'unit'
+2022-07-13 05:15:51,880 root         ERROR    line being parsed: unit tests did not complete
+2022-07-13 05:15:51,881 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/O/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:51,881 root         ERROR    message: invalid literal for int() with base 10: 'system'
+2022-07-13 05:15:51,881 root         ERROR    line being parsed: system tests did not complete
+2022-07-13 05:15:51,881 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/gfortran/10.3.0/O/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:51,881 root         ERROR    message: invalid literal for int() with base 10: 'No'
+2022-07-13 05:15:51,881 root         ERROR    line being parsed: No examples ran
+2022-07-13 05:15:51,989 root         DEBUG    checking out summary
+2022-07-13 05:15:51,989 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 4
+2022-07-13 05:15:52,000 root         INFO     processed [4] rows
+2022-07-13 05:15:52,000 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:15:52,004 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:15:52,019 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:15:52,032 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:15:52,032 root         DEBUG    adding all modified files in summary
+2022-07-13 05:15:52,039 root         DEBUG    committing to summary
+2022-07-13 05:15:52,044 root         INFO     On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 
-2022-07-13 04:15:41,682 root         INFO     finished summary for B:develop M: acorn [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:15:41,682 root         INFO     processing hash [1: v8.4.0b03]
-2022-07-13 04:15:41,682 root         DEBUG    generating summary for [v8.4.0b03]
-2022-07-13 04:15:41,682 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:41,864 root         DEBUG    matching logs: 0
-2022-07-13 04:15:41,864 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:41,977 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:41,977 root         DEBUG    finished reading logs
-2022-07-13 04:15:41,977 root         INFO     missing summary data for v8.4.0b03, develop [acorn]
-2022-07-13 04:15:41,977 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
-2022-07-13 04:15:41,977 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
-2022-07-13 04:15:41,977 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:42,147 root         DEBUG    matching logs: 0
-2022-07-13 04:15:42,147 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:42,249 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:42,249 root         DEBUG    finished reading logs
-2022-07-13 04:15:42,249 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [acorn]
-2022-07-13 04:15:42,249 root         INFO     processing hash [3: v8.4.0b02]
-2022-07-13 04:15:42,249 root         DEBUG    generating summary for [v8.4.0b02]
-2022-07-13 04:15:42,249 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:42,420 root         DEBUG    matching logs: 0
-2022-07-13 04:15:42,420 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:42,525 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:42,525 root         DEBUG    finished reading logs
-2022-07-13 04:15:42,525 root         INFO     missing summary data for v8.4.0b02, develop [acorn]
-2022-07-13 04:15:42,525 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
-2022-07-13 04:15:42,525 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
-2022-07-13 04:15:42,525 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:42,693 root         DEBUG    matching logs: 0
-2022-07-13 04:15:42,693 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:42,798 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:42,799 root         DEBUG    finished reading logs
-2022-07-13 04:15:42,799 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [acorn]
-2022-07-13 04:15:42,799 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:15:42,799 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:15:42,799 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:42,961 root         DEBUG    matching logs: 0
-2022-07-13 04:15:42,961 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:43,104 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:43,104 root         DEBUG    finished reading logs
-2022-07-13 04:15:43,104 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [acorn]
-2022-07-13 04:15:43,104 root         INFO     processing hash [6: v8.4.0b01-1-g3c875a5]
-2022-07-13 04:15:43,104 root         DEBUG    generating summary for [v8.4.0b01-1-g3c875a5]
-2022-07-13 04:15:43,104 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:43,298 root         DEBUG    matching logs: 0
-2022-07-13 04:15:43,298 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:43,412 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:43,412 root         DEBUG    finished reading logs
-2022-07-13 04:15:43,412 root         INFO     missing summary data for v8.4.0b01-1-g3c875a5, develop [acorn]
-2022-07-13 04:15:43,412 root         INFO     processing hash [7: v8.4.0b01]
-2022-07-13 04:15:43,412 root         DEBUG    generating summary for [v8.4.0b01]
-2022-07-13 04:15:43,412 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:43,581 root         DEBUG    matching logs: 0
-2022-07-13 04:15:43,581 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:43,688 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:43,688 root         DEBUG    finished reading logs
-2022-07-13 04:15:43,688 root         INFO     missing summary data for v8.4.0b01, develop [acorn]
-2022-07-13 04:15:43,688 root         INFO     processing hash [8: v8.4.0b00]
-2022-07-13 04:15:43,688 root         DEBUG    generating summary for [v8.4.0b00]
-2022-07-13 04:15:43,688 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:43,868 root         DEBUG    matching logs: 0
-2022-07-13 04:15:43,868 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:43,972 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:43,972 root         DEBUG    finished reading logs
-2022-07-13 04:15:43,972 root         INFO     missing summary data for v8.4.0b00, develop [acorn]
-2022-07-13 04:15:43,972 root         INFO     processing hash [9: v8.3.0b16]
-2022-07-13 04:15:43,972 root         DEBUG    generating summary for [v8.3.0b16]
-2022-07-13 04:15:43,972 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:44,146 root         DEBUG    matching logs: 0
-2022-07-13 04:15:44,146 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:44,254 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:44,254 root         DEBUG    finished reading logs
-2022-07-13 04:15:44,254 root         INFO     missing summary data for v8.3.0b16, develop [acorn]
-2022-07-13 04:15:44,254 root         INFO     processing hash [10: v8.3.0b15-6-g3df5f26]
-2022-07-13 04:15:44,254 root         DEBUG    generating summary for [v8.3.0b15-6-g3df5f26]
-2022-07-13 04:15:44,254 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:44,418 root         DEBUG    matching logs: 0
-2022-07-13 04:15:44,418 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:44,516 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:44,516 root         DEBUG    finished reading logs
-2022-07-13 04:15:44,516 root         INFO     missing summary data for v8.3.0b15-6-g3df5f26, develop [acorn]
-2022-07-13 04:15:44,516 root         INFO     processing hash [11: v8.3.0b15]
-2022-07-13 04:15:44,516 root         DEBUG    generating summary for [v8.3.0b15]
-2022-07-13 04:15:44,516 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:44,691 root         DEBUG    matching logs: 0
-2022-07-13 04:15:44,691 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:44,789 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:44,789 root         DEBUG    finished reading logs
-2022-07-13 04:15:44,789 root         INFO     missing summary data for v8.3.0b15, develop [acorn]
-2022-07-13 04:15:44,789 root         INFO     processing hash [12: v8.3.0b14-2-gde129fc]
-2022-07-13 04:15:44,789 root         DEBUG    generating summary for [v8.3.0b14-2-gde129fc]
-2022-07-13 04:15:44,789 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:44,960 root         DEBUG    matching logs: 0
-2022-07-13 04:15:44,960 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:45,066 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:45,066 root         DEBUG    finished reading logs
-2022-07-13 04:15:45,066 root         INFO     missing summary data for v8.3.0b14-2-gde129fc, develop [acorn]
-2022-07-13 04:15:45,066 root         INFO     processing hash [13: v8.3.0b13-29-g945a2c1]
-2022-07-13 04:15:45,066 root         DEBUG    generating summary for [v8.3.0b13-29-g945a2c1]
-2022-07-13 04:15:45,066 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:45,239 root         DEBUG    matching logs: 0
-2022-07-13 04:15:45,240 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:45,345 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:45,345 root         DEBUG    finished reading logs
-2022-07-13 04:15:45,345 root         INFO     missing summary data for v8.3.0b13-29-g945a2c1, develop [acorn]
-2022-07-13 04:15:45,345 root         INFO     processing hash [14: v8.3.0b13-25-g69a8078]
-2022-07-13 04:15:45,346 root         DEBUG    generating summary for [v8.3.0b13-25-g69a8078]
-2022-07-13 04:15:45,346 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:45,501 root         DEBUG    matching logs: 0
-2022-07-13 04:15:45,501 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:45,600 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:45,600 root         DEBUG    finished reading logs
-2022-07-13 04:15:45,600 root         INFO     missing summary data for v8.3.0b13-25-g69a8078, develop [acorn]
-2022-07-13 04:15:45,600 root         INFO     processing hash [15: v8.3.0b13]
-2022-07-13 04:15:45,600 root         DEBUG    generating summary for [v8.3.0b13]
-2022-07-13 04:15:45,600 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:45,758 root         DEBUG    matching logs: 0
-2022-07-13 04:15:45,758 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:45,856 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:45,856 root         DEBUG    finished reading logs
-2022-07-13 04:15:45,856 root         INFO     missing summary data for v8.3.0b13, develop [acorn]
-2022-07-13 04:15:45,856 root         INFO     processing hash [16: v8.3.0b12-72-g1df70b4]
-2022-07-13 04:15:45,856 root         DEBUG    generating summary for [v8.3.0b12-72-g1df70b4]
-2022-07-13 04:15:45,857 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:46,007 root         DEBUG    matching logs: 0
-2022-07-13 04:15:46,007 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:46,112 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:46,112 root         DEBUG    finished reading logs
-2022-07-13 04:15:46,112 root         INFO     missing summary data for v8.3.0b12-72-g1df70b4, develop [acorn]
-2022-07-13 04:15:46,112 root         INFO     processing hash [17: v8.3.0b12-66-g9684790]
-2022-07-13 04:15:46,112 root         DEBUG    generating summary for [v8.3.0b12-66-g9684790]
-2022-07-13 04:15:46,112 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:46,272 root         DEBUG    matching logs: 0
-2022-07-13 04:15:46,272 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:46,367 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:46,367 root         DEBUG    finished reading logs
-2022-07-13 04:15:46,367 root         INFO     missing summary data for v8.3.0b12-66-g9684790, develop [acorn]
-2022-07-13 04:15:46,367 root         INFO     processing hash [18: v8.3.0b12-61-g0687c4c]
-2022-07-13 04:15:46,367 root         DEBUG    generating summary for [v8.3.0b12-61-g0687c4c]
-2022-07-13 04:15:46,367 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:46,525 root         DEBUG    matching logs: 0
-2022-07-13 04:15:46,525 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:46,610 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:46,610 root         DEBUG    finished reading logs
-2022-07-13 04:15:46,611 root         INFO     missing summary data for v8.3.0b12-61-g0687c4c, develop [acorn]
-2022-07-13 04:15:46,611 root         INFO     processing hash [19: v8.3.0b12-59-ge6bf221]
-2022-07-13 04:15:46,611 root         DEBUG    generating summary for [v8.3.0b12-59-ge6bf221]
-2022-07-13 04:15:46,611 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:46,760 root         DEBUG    matching logs: 0
-2022-07-13 04:15:46,761 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:46,857 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:46,857 root         DEBUG    finished reading logs
-2022-07-13 04:15:46,857 root         INFO     missing summary data for v8.3.0b12-59-ge6bf221, develop [acorn]
-2022-07-13 04:15:46,857 root         INFO     processing hash [20: v8.3.0b12-1-g7c85d54]
-2022-07-13 04:15:46,857 root         DEBUG    generating summary for [v8.3.0b12-1-g7c85d54]
-2022-07-13 04:15:46,857 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:47,006 root         DEBUG    matching logs: 0
-2022-07-13 04:15:47,006 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:47,094 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:47,094 root         DEBUG    finished reading logs
-2022-07-13 04:15:47,094 root         INFO     missing summary data for v8.3.0b12-1-g7c85d54, develop [acorn]
-2022-07-13 04:15:47,094 root         INFO     processing hash [21: v8.3.0b12]
-2022-07-13 04:15:47,094 root         DEBUG    generating summary for [v8.3.0b12]
-2022-07-13 04:15:47,094 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:47,241 root         DEBUG    matching logs: 0
-2022-07-13 04:15:47,241 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:47,335 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:47,335 root         DEBUG    finished reading logs
-2022-07-13 04:15:47,335 root         INFO     missing summary data for v8.3.0b12, develop [acorn]
-2022-07-13 04:15:47,335 root         INFO     processing hash [22: v8.3.0b11-1-g7cbbce7]
-2022-07-13 04:15:47,335 root         DEBUG    generating summary for [v8.3.0b11-1-g7cbbce7]
-2022-07-13 04:15:47,335 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:47,489 root         DEBUG    matching logs: 0
-2022-07-13 04:15:47,489 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:47,582 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:47,583 root         DEBUG    finished reading logs
-2022-07-13 04:15:47,583 root         INFO     missing summary data for v8.3.0b11-1-g7cbbce7, develop [acorn]
-2022-07-13 04:15:47,583 root         INFO     processing hash [23: v8.3.0b11]
-2022-07-13 04:15:47,583 root         DEBUG    generating summary for [v8.3.0b11]
-2022-07-13 04:15:47,583 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:47,741 root         DEBUG    matching logs: 0
-2022-07-13 04:15:47,741 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:47,850 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:47,850 root         DEBUG    finished reading logs
-2022-07-13 04:15:47,850 root         INFO     missing summary data for v8.3.0b11, develop [acorn]
-2022-07-13 04:15:47,850 root         INFO     processing hash [24: v8.3.0b10-105-ga5295e3]
-2022-07-13 04:15:47,850 root         DEBUG    generating summary for [v8.3.0b10-105-ga5295e3]
-2022-07-13 04:15:47,850 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:48,000 root         DEBUG    matching logs: 0
-2022-07-13 04:15:48,000 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:48,099 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:48,099 root         DEBUG    finished reading logs
-2022-07-13 04:15:48,099 root         INFO     missing summary data for v8.3.0b10-105-ga5295e3, develop [acorn]
-2022-07-13 04:15:48,099 root         INFO     processing hash [25: v8.3.0b09-4-g424b2f2]
-2022-07-13 04:15:48,099 root         DEBUG    generating summary for [v8.3.0b09-4-g424b2f2]
-2022-07-13 04:15:48,099 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:48,250 root         DEBUG    matching logs: 0
-2022-07-13 04:15:48,250 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:48,345 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:48,345 root         DEBUG    finished reading logs
-2022-07-13 04:15:48,345 root         INFO     missing summary data for v8.3.0b09-4-g424b2f2, develop [acorn]
-2022-07-13 04:15:48,345 root         INFO     processing hash [26: v8.3.0b09-3-ge20ebbf]
-2022-07-13 04:15:48,345 root         DEBUG    generating summary for [v8.3.0b09-3-ge20ebbf]
-2022-07-13 04:15:48,345 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:48,419 root         DEBUG    matched other version v8.3.0b09-3-ge20ebbf11d
-2022-07-13 04:15:48,433 root         DEBUG    matched other version v8.3.0b09-3-ge20ebbf11d
-2022-07-13 04:15:48,492 root         DEBUG    matching logs: 2
-2022-07-13 04:15:48,492 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:48,541 root         DEBUG    matched other version v8.3.0b09-3-ge20ebbf11d
-2022-07-13 04:15:48,542 root         DEBUG    matched other version v8.3.0b09-3-ge20ebbf11d
-2022-07-13 04:15:48,587 root         DEBUG    matching summaries: 2
-2022-07-13 04:15:48,620 root         DEBUG    finished reading logs
-2022-07-13 04:15:48,620 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/g/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:48,620 root         ERROR    message: invalid literal for int() with base 10: 'unit'
-2022-07-13 04:15:48,620 root         ERROR    line being parsed: unit tests did not complete
-2022-07-13 04:15:48,620 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/g/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:48,620 root         ERROR    message: invalid literal for int() with base 10: 'system'
-2022-07-13 04:15:48,620 root         ERROR    line being parsed: system tests did not complete
-2022-07-13 04:15:48,621 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/g/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:48,621 root         ERROR    message: invalid literal for int() with base 10: 'No'
-2022-07-13 04:15:48,621 root         ERROR    line being parsed: No examples ran
-2022-07-13 04:15:48,718 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/O/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:48,718 root         ERROR    message: invalid literal for int() with base 10: 'unit'
-2022-07-13 04:15:48,718 root         ERROR    line being parsed: unit tests did not complete
-2022-07-13 04:15:48,718 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/O/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:48,719 root         ERROR    message: invalid literal for int() with base 10: 'system'
-2022-07-13 04:15:48,719 root         ERROR    line being parsed: system tests did not complete
-2022-07-13 04:15:48,719 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/O/mpi/8.1.7/summary.dat]
-2022-07-13 04:15:48,719 root         ERROR    message: invalid literal for int() with base 10: 'No'
-2022-07-13 04:15:48,719 root         ERROR    line being parsed: No examples ran
-2022-07-13 04:15:48,798 root         DEBUG    checking out summary
-2022-07-13 04:15:48,799 root         DEBUG    writing archive v8.3.0b09-3-ge20ebbf length 2
-2022-07-13 04:15:48,809 root         INFO     processed [2] rows
-2022-07-13 04:15:48,809 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.3.0b09-3-ge20ebbf
-2022-07-13 04:15:48,809 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.3.0b09-3-ge20ebbf
-2022-07-13 04:15:48,810 root         DEBUG    writing file csv[2]: /tmp/esmf_branch_summary_space/develop/v8.3.0b09-3-ge20ebbf
-2022-07-13 04:15:48,810 root         DEBUG    adding all modified files in summary
-2022-07-13 04:15:48,816 root         DEBUG    committing to summary
-2022-07-13 04:15:48,821 root         INFO     On branch main
+2022-07-13 05:15:52,473 root         INFO     finished summary for B:develop M: acorn [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:15:52,474 root         INFO     processing hash [1: v8.4.0b03]
+2022-07-13 05:15:52,474 root         DEBUG    generating summary for [v8.4.0b03]
+2022-07-13 05:15:52,474 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:52,635 root         DEBUG    matching logs: 0
+2022-07-13 05:15:52,635 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:52,741 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:52,741 root         DEBUG    finished reading logs
+2022-07-13 05:15:52,741 root         INFO     missing summary data for v8.4.0b03, develop [acorn]
+2022-07-13 05:15:52,741 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
+2022-07-13 05:15:52,741 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
+2022-07-13 05:15:52,741 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:52,899 root         DEBUG    matching logs: 0
+2022-07-13 05:15:52,899 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:52,995 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:52,995 root         DEBUG    finished reading logs
+2022-07-13 05:15:52,995 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [acorn]
+2022-07-13 05:15:52,995 root         INFO     processing hash [3: v8.4.0b02]
+2022-07-13 05:15:52,995 root         DEBUG    generating summary for [v8.4.0b02]
+2022-07-13 05:15:52,995 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:53,160 root         DEBUG    matching logs: 0
+2022-07-13 05:15:53,160 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:53,267 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:53,267 root         DEBUG    finished reading logs
+2022-07-13 05:15:53,267 root         INFO     missing summary data for v8.4.0b02, develop [acorn]
+2022-07-13 05:15:53,268 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
+2022-07-13 05:15:53,268 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
+2022-07-13 05:15:53,268 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:53,441 root         DEBUG    matching logs: 0
+2022-07-13 05:15:53,441 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:53,546 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:53,546 root         DEBUG    finished reading logs
+2022-07-13 05:15:53,546 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [acorn]
+2022-07-13 05:15:53,546 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:15:53,546 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:15:53,546 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:53,709 root         DEBUG    matching logs: 0
+2022-07-13 05:15:53,709 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:53,811 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:53,812 root         DEBUG    finished reading logs
+2022-07-13 05:15:53,812 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [acorn]
+2022-07-13 05:15:53,812 root         INFO     processing hash [6: v8.4.0b01-1-g3c875a5]
+2022-07-13 05:15:53,812 root         DEBUG    generating summary for [v8.4.0b01-1-g3c875a5]
+2022-07-13 05:15:53,812 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:53,979 root         DEBUG    matching logs: 0
+2022-07-13 05:15:53,979 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:54,083 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:54,083 root         DEBUG    finished reading logs
+2022-07-13 05:15:54,083 root         INFO     missing summary data for v8.4.0b01-1-g3c875a5, develop [acorn]
+2022-07-13 05:15:54,083 root         INFO     processing hash [7: v8.4.0b01]
+2022-07-13 05:15:54,083 root         DEBUG    generating summary for [v8.4.0b01]
+2022-07-13 05:15:54,083 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:54,263 root         DEBUG    matching logs: 0
+2022-07-13 05:15:54,263 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:54,363 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:54,363 root         DEBUG    finished reading logs
+2022-07-13 05:15:54,363 root         INFO     missing summary data for v8.4.0b01, develop [acorn]
+2022-07-13 05:15:54,363 root         INFO     processing hash [8: v8.4.0b00]
+2022-07-13 05:15:54,363 root         DEBUG    generating summary for [v8.4.0b00]
+2022-07-13 05:15:54,363 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:54,526 root         DEBUG    matching logs: 0
+2022-07-13 05:15:54,527 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:54,621 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:54,621 root         DEBUG    finished reading logs
+2022-07-13 05:15:54,621 root         INFO     missing summary data for v8.4.0b00, develop [acorn]
+2022-07-13 05:15:54,621 root         INFO     processing hash [9: v8.3.0b16]
+2022-07-13 05:15:54,621 root         DEBUG    generating summary for [v8.3.0b16]
+2022-07-13 05:15:54,621 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:54,791 root         DEBUG    matching logs: 0
+2022-07-13 05:15:54,791 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:54,889 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:54,889 root         DEBUG    finished reading logs
+2022-07-13 05:15:54,889 root         INFO     missing summary data for v8.3.0b16, develop [acorn]
+2022-07-13 05:15:54,889 root         INFO     processing hash [10: v8.3.0b15-6-g3df5f26]
+2022-07-13 05:15:54,890 root         DEBUG    generating summary for [v8.3.0b15-6-g3df5f26]
+2022-07-13 05:15:54,890 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:55,049 root         DEBUG    matching logs: 0
+2022-07-13 05:15:55,049 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:55,160 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:55,160 root         DEBUG    finished reading logs
+2022-07-13 05:15:55,160 root         INFO     missing summary data for v8.3.0b15-6-g3df5f26, develop [acorn]
+2022-07-13 05:15:55,160 root         INFO     processing hash [11: v8.3.0b15]
+2022-07-13 05:15:55,160 root         DEBUG    generating summary for [v8.3.0b15]
+2022-07-13 05:15:55,160 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:55,325 root         DEBUG    matching logs: 0
+2022-07-13 05:15:55,325 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:55,420 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:55,420 root         DEBUG    finished reading logs
+2022-07-13 05:15:55,421 root         INFO     missing summary data for v8.3.0b15, develop [acorn]
+2022-07-13 05:15:55,421 root         INFO     processing hash [12: v8.3.0b14-2-gde129fc]
+2022-07-13 05:15:55,421 root         DEBUG    generating summary for [v8.3.0b14-2-gde129fc]
+2022-07-13 05:15:55,421 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:55,587 root         DEBUG    matching logs: 0
+2022-07-13 05:15:55,587 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:55,686 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:55,686 root         DEBUG    finished reading logs
+2022-07-13 05:15:55,686 root         INFO     missing summary data for v8.3.0b14-2-gde129fc, develop [acorn]
+2022-07-13 05:15:55,686 root         INFO     processing hash [13: v8.3.0b13-29-g945a2c1]
+2022-07-13 05:15:55,686 root         DEBUG    generating summary for [v8.3.0b13-29-g945a2c1]
+2022-07-13 05:15:55,686 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:55,861 root         DEBUG    matching logs: 0
+2022-07-13 05:15:55,861 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:55,975 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:55,976 root         DEBUG    finished reading logs
+2022-07-13 05:15:55,976 root         INFO     missing summary data for v8.3.0b13-29-g945a2c1, develop [acorn]
+2022-07-13 05:15:55,976 root         INFO     processing hash [14: v8.3.0b13-25-g69a8078]
+2022-07-13 05:15:55,976 root         DEBUG    generating summary for [v8.3.0b13-25-g69a8078]
+2022-07-13 05:15:55,976 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:56,136 root         DEBUG    matching logs: 0
+2022-07-13 05:15:56,136 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:56,228 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:56,228 root         DEBUG    finished reading logs
+2022-07-13 05:15:56,228 root         INFO     missing summary data for v8.3.0b13-25-g69a8078, develop [acorn]
+2022-07-13 05:15:56,228 root         INFO     processing hash [15: v8.3.0b13]
+2022-07-13 05:15:56,229 root         DEBUG    generating summary for [v8.3.0b13]
+2022-07-13 05:15:56,229 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:56,383 root         DEBUG    matching logs: 0
+2022-07-13 05:15:56,383 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:56,490 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:56,490 root         DEBUG    finished reading logs
+2022-07-13 05:15:56,490 root         INFO     missing summary data for v8.3.0b13, develop [acorn]
+2022-07-13 05:15:56,490 root         INFO     processing hash [16: v8.3.0b12-72-g1df70b4]
+2022-07-13 05:15:56,490 root         DEBUG    generating summary for [v8.3.0b12-72-g1df70b4]
+2022-07-13 05:15:56,490 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:56,649 root         DEBUG    matching logs: 0
+2022-07-13 05:15:56,649 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:56,754 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:56,754 root         DEBUG    finished reading logs
+2022-07-13 05:15:56,754 root         INFO     missing summary data for v8.3.0b12-72-g1df70b4, develop [acorn]
+2022-07-13 05:15:56,754 root         INFO     processing hash [17: v8.3.0b12-66-g9684790]
+2022-07-13 05:15:56,755 root         DEBUG    generating summary for [v8.3.0b12-66-g9684790]
+2022-07-13 05:15:56,755 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:56,910 root         DEBUG    matching logs: 0
+2022-07-13 05:15:56,910 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:57,010 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:57,010 root         DEBUG    finished reading logs
+2022-07-13 05:15:57,010 root         INFO     missing summary data for v8.3.0b12-66-g9684790, develop [acorn]
+2022-07-13 05:15:57,010 root         INFO     processing hash [18: v8.3.0b12-61-g0687c4c]
+2022-07-13 05:15:57,010 root         DEBUG    generating summary for [v8.3.0b12-61-g0687c4c]
+2022-07-13 05:15:57,010 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:57,172 root         DEBUG    matching logs: 0
+2022-07-13 05:15:57,172 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:57,282 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:57,283 root         DEBUG    finished reading logs
+2022-07-13 05:15:57,283 root         INFO     missing summary data for v8.3.0b12-61-g0687c4c, develop [acorn]
+2022-07-13 05:15:57,283 root         INFO     processing hash [19: v8.3.0b12-59-ge6bf221]
+2022-07-13 05:15:57,283 root         DEBUG    generating summary for [v8.3.0b12-59-ge6bf221]
+2022-07-13 05:15:57,283 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:57,447 root         DEBUG    matching logs: 0
+2022-07-13 05:15:57,447 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:57,554 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:57,554 root         DEBUG    finished reading logs
+2022-07-13 05:15:57,554 root         INFO     missing summary data for v8.3.0b12-59-ge6bf221, develop [acorn]
+2022-07-13 05:15:57,554 root         INFO     processing hash [20: v8.3.0b12-1-g7c85d54]
+2022-07-13 05:15:57,555 root         DEBUG    generating summary for [v8.3.0b12-1-g7c85d54]
+2022-07-13 05:15:57,555 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:57,721 root         DEBUG    matching logs: 0
+2022-07-13 05:15:57,721 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:57,811 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:57,811 root         DEBUG    finished reading logs
+2022-07-13 05:15:57,812 root         INFO     missing summary data for v8.3.0b12-1-g7c85d54, develop [acorn]
+2022-07-13 05:15:57,812 root         INFO     processing hash [21: v8.3.0b12]
+2022-07-13 05:15:57,812 root         DEBUG    generating summary for [v8.3.0b12]
+2022-07-13 05:15:57,812 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:57,961 root         DEBUG    matching logs: 0
+2022-07-13 05:15:57,961 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:58,052 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:58,052 root         DEBUG    finished reading logs
+2022-07-13 05:15:58,052 root         INFO     missing summary data for v8.3.0b12, develop [acorn]
+2022-07-13 05:15:58,053 root         INFO     processing hash [22: v8.3.0b11-1-g7cbbce7]
+2022-07-13 05:15:58,053 root         DEBUG    generating summary for [v8.3.0b11-1-g7cbbce7]
+2022-07-13 05:15:58,053 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:58,200 root         DEBUG    matching logs: 0
+2022-07-13 05:15:58,200 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:58,303 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:58,304 root         DEBUG    finished reading logs
+2022-07-13 05:15:58,304 root         INFO     missing summary data for v8.3.0b11-1-g7cbbce7, develop [acorn]
+2022-07-13 05:15:58,304 root         INFO     processing hash [23: v8.3.0b11]
+2022-07-13 05:15:58,304 root         DEBUG    generating summary for [v8.3.0b11]
+2022-07-13 05:15:58,304 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:58,465 root         DEBUG    matching logs: 0
+2022-07-13 05:15:58,465 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:58,558 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:58,559 root         DEBUG    finished reading logs
+2022-07-13 05:15:58,559 root         INFO     missing summary data for v8.3.0b11, develop [acorn]
+2022-07-13 05:15:58,559 root         INFO     processing hash [24: v8.3.0b10-105-ga5295e3]
+2022-07-13 05:15:58,559 root         DEBUG    generating summary for [v8.3.0b10-105-ga5295e3]
+2022-07-13 05:15:58,559 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:58,720 root         DEBUG    matching logs: 0
+2022-07-13 05:15:58,720 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:58,814 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:58,814 root         DEBUG    finished reading logs
+2022-07-13 05:15:58,814 root         INFO     missing summary data for v8.3.0b10-105-ga5295e3, develop [acorn]
+2022-07-13 05:15:58,814 root         INFO     processing hash [25: v8.3.0b09-4-g424b2f2]
+2022-07-13 05:15:58,814 root         DEBUG    generating summary for [v8.3.0b09-4-g424b2f2]
+2022-07-13 05:15:58,815 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:58,967 root         DEBUG    matching logs: 0
+2022-07-13 05:15:58,967 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:59,057 root         DEBUG    matching summaries: 0
+2022-07-13 05:15:59,057 root         DEBUG    finished reading logs
+2022-07-13 05:15:59,057 root         INFO     missing summary data for v8.3.0b09-4-g424b2f2, develop [acorn]
+2022-07-13 05:15:59,058 root         INFO     processing hash [26: v8.3.0b09-3-ge20ebbf]
+2022-07-13 05:15:59,058 root         DEBUG    generating summary for [v8.3.0b09-3-ge20ebbf]
+2022-07-13 05:15:59,058 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:15:59,134 root         DEBUG    matched other version v8.3.0b09-3-ge20ebbf11d
+2022-07-13 05:15:59,149 root         DEBUG    matched other version v8.3.0b09-3-ge20ebbf11d
+2022-07-13 05:15:59,207 root         DEBUG    matching logs: 2
+2022-07-13 05:15:59,207 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:15:59,262 root         DEBUG    matched other version v8.3.0b09-3-ge20ebbf11d
+2022-07-13 05:15:59,264 root         DEBUG    matched other version v8.3.0b09-3-ge20ebbf11d
+2022-07-13 05:15:59,316 root         DEBUG    matching summaries: 2
+2022-07-13 05:15:59,348 root         DEBUG    finished reading logs
+2022-07-13 05:15:59,348 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/g/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:59,348 root         ERROR    message: invalid literal for int() with base 10: 'unit'
+2022-07-13 05:15:59,349 root         ERROR    line being parsed: unit tests did not complete
+2022-07-13 05:15:59,349 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/g/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:59,349 root         ERROR    message: invalid literal for int() with base 10: 'system'
+2022-07-13 05:15:59,349 root         ERROR    line being parsed: system tests did not complete
+2022-07-13 05:15:59,349 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/g/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:59,349 root         ERROR    message: invalid literal for int() with base 10: 'No'
+2022-07-13 05:15:59,349 root         ERROR    line being parsed: No examples ran
+2022-07-13 05:15:59,460 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/O/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:59,460 root         ERROR    message: invalid literal for int() with base 10: 'unit'
+2022-07-13 05:15:59,460 root         ERROR    line being parsed: unit tests did not complete
+2022-07-13 05:15:59,460 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/O/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:59,460 root         ERROR    message: invalid literal for int() with base 10: 'system'
+2022-07-13 05:15:59,460 root         ERROR    line being parsed: system tests did not complete
+2022-07-13 05:15:59,461 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/acorn/intel/2019.3/O/mpi/8.1.7/summary.dat]
+2022-07-13 05:15:59,461 root         ERROR    message: invalid literal for int() with base 10: 'No'
+2022-07-13 05:15:59,461 root         ERROR    line being parsed: No examples ran
+2022-07-13 05:15:59,549 root         DEBUG    checking out summary
+2022-07-13 05:15:59,549 root         DEBUG    writing archive v8.3.0b09-3-ge20ebbf length 2
+2022-07-13 05:15:59,557 root         INFO     processed [2] rows
+2022-07-13 05:15:59,557 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.3.0b09-3-ge20ebbf
+2022-07-13 05:15:59,558 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.3.0b09-3-ge20ebbf
+2022-07-13 05:15:59,559 root         DEBUG    writing file csv[2]: /tmp/esmf_branch_summary_space/develop/v8.3.0b09-3-ge20ebbf
+2022-07-13 05:15:59,559 root         DEBUG    adding all modified files in summary
+2022-07-13 05:15:59,564 root         DEBUG    committing to summary
+2022-07-13 05:15:59,570 root         INFO     On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 
-2022-07-13 04:15:49,229 root         INFO     finished summary for B:develop M: acorn [v8.3.0b09-3-ge20ebbf]
-2022-07-13 04:15:49,229 root         INFO     processing hash [27: v8.3.0b09-1-g1bcf580]
-2022-07-13 04:15:49,229 root         DEBUG    generating summary for [v8.3.0b09-1-g1bcf580]
-2022-07-13 04:15:49,229 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:49,398 root         DEBUG    matching logs: 0
-2022-07-13 04:15:49,398 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:49,505 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:49,505 root         DEBUG    finished reading logs
-2022-07-13 04:15:49,505 root         INFO     missing summary data for v8.3.0b09-1-g1bcf580, develop [acorn]
-2022-07-13 04:15:49,505 root         INFO     processing hash [28: v8.3.0b09]
-2022-07-13 04:15:49,505 root         DEBUG    generating summary for [v8.3.0b09]
-2022-07-13 04:15:49,505 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:15:49,667 root         DEBUG    matching logs: 0
-2022-07-13 04:15:49,667 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:15:49,769 root         DEBUG    matching summaries: 0
-2022-07-13 04:15:49,769 root         DEBUG    finished reading logs
-2022-07-13 04:15:49,769 root         INFO     missing summary data for v8.3.0b09, develop [acorn]
-2022-07-13 04:15:49,769 root         INFO     finished summaries for branch develop on machine acorn
-2022-07-13 04:15:49,770 root         INFO     generating summaries for develop [catania]
-2022-07-13 04:15:49,770 root         DEBUG    checking out catania
-2022-07-13 04:16:04,345 root         DEBUG    pulling from catania
-2022-07-13 04:16:04,821 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
-2022-07-13 04:16:04,821 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:16:04,821 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:04,882 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:04,911 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:04,939 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:04,957 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:04,962 root         DEBUG    matching logs: 4
-2022-07-13 04:16:04,962 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:05,000 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:05,003 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:05,007 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:05,011 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:05,016 root         DEBUG    matching summaries: 4
-2022-07-13 04:16:05,076 root         DEBUG    finished reading logs
-2022-07-13 04:16:05,308 root         DEBUG    checking out summary
-2022-07-13 04:16:05,308 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 4
-2022-07-13 04:16:05,316 root         INFO     processed [4] rows
-2022-07-13 04:16:05,316 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:05,320 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:05,335 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:05,349 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:05,350 root         DEBUG    adding all modified files in summary
-2022-07-13 04:16:05,355 root         DEBUG    committing to summary
-2022-07-13 04:16:05,361 root         INFO     On branch main
+2022-07-13 05:15:59,984 root         INFO     finished summary for B:develop M: acorn [v8.3.0b09-3-ge20ebbf]
+2022-07-13 05:15:59,984 root         INFO     processing hash [27: v8.3.0b09-1-g1bcf580]
+2022-07-13 05:15:59,984 root         DEBUG    generating summary for [v8.3.0b09-1-g1bcf580]
+2022-07-13 05:15:59,985 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:16:00,147 root         DEBUG    matching logs: 0
+2022-07-13 05:16:00,147 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:16:00,245 root         DEBUG    matching summaries: 0
+2022-07-13 05:16:00,245 root         DEBUG    finished reading logs
+2022-07-13 05:16:00,245 root         INFO     missing summary data for v8.3.0b09-1-g1bcf580, develop [acorn]
+2022-07-13 05:16:00,245 root         INFO     processing hash [28: v8.3.0b09]
+2022-07-13 05:16:00,245 root         DEBUG    generating summary for [v8.3.0b09]
+2022-07-13 05:16:00,245 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:16:00,393 root         DEBUG    matching logs: 0
+2022-07-13 05:16:00,393 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:16:00,486 root         DEBUG    matching summaries: 0
+2022-07-13 05:16:00,486 root         DEBUG    finished reading logs
+2022-07-13 05:16:00,486 root         INFO     missing summary data for v8.3.0b09, develop [acorn]
+2022-07-13 05:16:00,486 root         INFO     finished summaries for branch develop on machine acorn
+2022-07-13 05:16:00,486 root         INFO     generating summaries for develop [catania]
+2022-07-13 05:16:00,486 root         DEBUG    checking out catania
+2022-07-13 05:16:19,802 root         DEBUG    pulling from catania
+2022-07-13 05:16:20,337 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
+2022-07-13 05:16:20,337 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:16:20,337 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:16:20,405 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:20,434 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:20,462 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:20,476 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:20,481 root         DEBUG    matching logs: 4
+2022-07-13 05:16:20,481 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:16:20,526 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:20,529 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:20,533 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:20,537 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:20,542 root         DEBUG    matching summaries: 4
+2022-07-13 05:16:20,593 root         DEBUG    finished reading logs
+2022-07-13 05:16:20,906 root         DEBUG    checking out summary
+2022-07-13 05:16:20,906 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 4
+2022-07-13 05:16:20,919 root         INFO     processed [4] rows
+2022-07-13 05:16:20,919 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:16:20,923 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:16:20,937 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:16:20,950 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:16:20,950 root         DEBUG    adding all modified files in summary
+2022-07-13 05:16:20,956 root         DEBUG    committing to summary
+2022-07-13 05:16:20,963 root         INFO     On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 
-2022-07-13 04:16:05,831 root         INFO     finished summary for B:develop M: catania [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:16:05,831 root         INFO     processing hash [1: v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:16:05,831 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:16:05,831 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:05,941 root         DEBUG    matching logs: 0
-2022-07-13 04:16:05,941 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:06,000 root         DEBUG    matching summaries: 0
-2022-07-13 04:16:06,001 root         DEBUG    finished reading logs
-2022-07-13 04:16:06,001 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [catania]
-2022-07-13 04:16:06,001 root         INFO     finished summaries for branch develop on machine catania
-2022-07-13 04:16:06,001 root         INFO     generating summaries for develop [cheyenne]
-2022-07-13 04:16:06,001 root         DEBUG    checking out cheyenne
-2022-07-13 04:16:28,116 root         DEBUG    pulling from cheyenne
-2022-07-13 04:16:28,939 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
-2022-07-13 04:16:28,939 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:16:28,939 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:29,011 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,032 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,053 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,075 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,097 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,119 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,139 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,153 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,174 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,189 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,209 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,236 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,259 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,294 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,322 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,339 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,363 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,420 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,494 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,511 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,517 root         DEBUG    matching logs: 20
-2022-07-13 04:16:29,517 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:29,560 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,565 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,570 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,574 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,578 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,583 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,587 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,591 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,595 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,600 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,605 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,609 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,614 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,618 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,623 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,627 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,632 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,636 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,640 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,645 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:29,654 root         DEBUG    matching summaries: 20
-2022-07-13 04:16:30,046 root         DEBUG    finished reading logs
-2022-07-13 04:16:39,238 root         DEBUG    checking out summary
-2022-07-13 04:16:39,239 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 20
-2022-07-13 04:16:39,251 root         INFO     processed [20] rows
-2022-07-13 04:16:39,251 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:39,255 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:39,268 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:39,282 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:39,283 root         DEBUG    adding all modified files in summary
-2022-07-13 04:16:39,289 root         DEBUG    committing to summary
-2022-07-13 04:16:39,294 root         INFO     On branch main
+2022-07-13 05:16:21,406 root         INFO     finished summary for B:develop M: catania [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:16:21,406 root         INFO     processing hash [1: v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:16:21,406 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:16:21,406 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:16:21,520 root         DEBUG    matching logs: 0
+2022-07-13 05:16:21,520 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:16:21,582 root         DEBUG    matching summaries: 0
+2022-07-13 05:16:21,582 root         DEBUG    finished reading logs
+2022-07-13 05:16:21,582 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [catania]
+2022-07-13 05:16:21,582 root         INFO     finished summaries for branch develop on machine catania
+2022-07-13 05:16:21,582 root         INFO     generating summaries for develop [cheyenne]
+2022-07-13 05:16:21,582 root         DEBUG    checking out cheyenne
+2022-07-13 05:16:50,483 root         DEBUG    pulling from cheyenne
+2022-07-13 05:16:51,381 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
+2022-07-13 05:16:51,381 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:16:51,381 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:16:51,450 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,473 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,513 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,535 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,558 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,582 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,601 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,618 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,634 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,651 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,729 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,756 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,779 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,812 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,841 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,858 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,881 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:51,936 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,007 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,023 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,028 root         DEBUG    matching logs: 20
+2022-07-13 05:16:52,028 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:16:52,069 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,073 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,078 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,081 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,085 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,089 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,094 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,097 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,101 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,105 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,110 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,114 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,118 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,122 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,127 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,131 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,135 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,139 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,143 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,148 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:16:52,158 root         DEBUG    matching summaries: 20
+2022-07-13 05:16:52,537 root         DEBUG    finished reading logs
+2022-07-13 05:17:03,531 root         DEBUG    checking out summary
+2022-07-13 05:17:03,532 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 20
+2022-07-13 05:17:03,547 root         INFO     processed [20] rows
+2022-07-13 05:17:03,547 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:03,552 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:03,566 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:03,579 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:03,580 root         DEBUG    adding all modified files in summary
+2022-07-13 05:17:03,585 root         DEBUG    committing to summary
+2022-07-13 05:17:03,592 root         INFO     On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 
-2022-07-13 04:16:39,712 root         INFO     finished summary for B:develop M: cheyenne [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:16:39,712 root         INFO     processing hash [1: v8.4.0b03]
-2022-07-13 04:16:39,713 root         DEBUG    generating summary for [v8.4.0b03]
-2022-07-13 04:16:39,713 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:40,148 root         DEBUG    matching logs: 0
-2022-07-13 04:16:40,148 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:40,283 root         DEBUG    matching summaries: 0
-2022-07-13 04:16:40,283 root         DEBUG    finished reading logs
-2022-07-13 04:16:40,283 root         INFO     missing summary data for v8.4.0b03, develop [cheyenne]
-2022-07-13 04:16:40,284 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
-2022-07-13 04:16:40,284 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
-2022-07-13 04:16:40,284 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:40,725 root         DEBUG    matching logs: 0
-2022-07-13 04:16:40,725 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:40,863 root         DEBUG    matching summaries: 0
-2022-07-13 04:16:40,864 root         DEBUG    finished reading logs
-2022-07-13 04:16:40,864 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [cheyenne]
-2022-07-13 04:16:40,864 root         INFO     processing hash [3: v8.4.0b02]
-2022-07-13 04:16:40,864 root         DEBUG    generating summary for [v8.4.0b02]
-2022-07-13 04:16:40,864 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:41,293 root         DEBUG    matching logs: 0
-2022-07-13 04:16:41,293 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:41,413 root         DEBUG    matching summaries: 0
-2022-07-13 04:16:41,413 root         DEBUG    finished reading logs
-2022-07-13 04:16:41,413 root         INFO     missing summary data for v8.4.0b02, develop [cheyenne]
-2022-07-13 04:16:41,414 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
-2022-07-13 04:16:41,414 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
-2022-07-13 04:16:41,414 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:41,858 root         DEBUG    matching logs: 0
-2022-07-13 04:16:41,859 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:41,989 root         DEBUG    matching summaries: 0
-2022-07-13 04:16:41,989 root         DEBUG    finished reading logs
-2022-07-13 04:16:41,989 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [cheyenne]
-2022-07-13 04:16:41,989 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:16:41,989 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:16:41,989 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:42,428 root         DEBUG    matching logs: 0
-2022-07-13 04:16:42,428 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:42,544 root         DEBUG    matching summaries: 0
-2022-07-13 04:16:42,545 root         DEBUG    finished reading logs
-2022-07-13 04:16:42,545 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [cheyenne]
-2022-07-13 04:16:42,545 root         INFO     finished summaries for branch develop on machine cheyenne
-2022-07-13 04:16:42,545 root         INFO     generating summaries for develop [chianti]
-2022-07-13 04:16:42,545 root         DEBUG    checking out chianti
-2022-07-13 04:16:54,581 root         DEBUG    pulling from chianti
-2022-07-13 04:16:55,261 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
-2022-07-13 04:16:55,262 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:16:55,262 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:55,331 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:55,354 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:55,374 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:55,403 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:55,408 root         DEBUG    matching logs: 4
-2022-07-13 04:16:55,408 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:55,449 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:55,454 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:55,459 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:55,463 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:16:55,468 root         DEBUG    matching summaries: 4
-2022-07-13 04:16:55,518 root         DEBUG    finished reading logs
-2022-07-13 04:16:57,905 root         DEBUG    checking out summary
-2022-07-13 04:16:57,905 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 4
-2022-07-13 04:16:57,943 root         INFO     processed [4] rows
-2022-07-13 04:16:57,943 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:57,947 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:57,961 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:57,975 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:16:57,975 root         DEBUG    adding all modified files in summary
-2022-07-13 04:16:57,980 root         DEBUG    committing to summary
-2022-07-13 04:16:57,985 root         INFO     On branch main
+2022-07-13 05:17:04,022 root         INFO     finished summary for B:develop M: cheyenne [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:17:04,022 root         INFO     processing hash [1: v8.4.0b03]
+2022-07-13 05:17:04,022 root         DEBUG    generating summary for [v8.4.0b03]
+2022-07-13 05:17:04,022 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:04,460 root         DEBUG    matching logs: 0
+2022-07-13 05:17:04,460 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:04,592 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:04,592 root         DEBUG    finished reading logs
+2022-07-13 05:17:04,592 root         INFO     missing summary data for v8.4.0b03, develop [cheyenne]
+2022-07-13 05:17:04,592 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
+2022-07-13 05:17:04,592 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
+2022-07-13 05:17:04,592 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:05,041 root         DEBUG    matching logs: 0
+2022-07-13 05:17:05,041 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:05,168 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:05,168 root         DEBUG    finished reading logs
+2022-07-13 05:17:05,168 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [cheyenne]
+2022-07-13 05:17:05,168 root         INFO     processing hash [3: v8.4.0b02]
+2022-07-13 05:17:05,168 root         DEBUG    generating summary for [v8.4.0b02]
+2022-07-13 05:17:05,168 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:05,600 root         DEBUG    matching logs: 0
+2022-07-13 05:17:05,600 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:05,737 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:05,737 root         DEBUG    finished reading logs
+2022-07-13 05:17:05,737 root         INFO     missing summary data for v8.4.0b02, develop [cheyenne]
+2022-07-13 05:17:05,737 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
+2022-07-13 05:17:05,737 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
+2022-07-13 05:17:05,737 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:06,176 root         DEBUG    matching logs: 0
+2022-07-13 05:17:06,176 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:06,309 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:06,309 root         DEBUG    finished reading logs
+2022-07-13 05:17:06,309 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [cheyenne]
+2022-07-13 05:17:06,309 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:17:06,309 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:17:06,309 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:06,747 root         DEBUG    matching logs: 0
+2022-07-13 05:17:06,747 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:06,887 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:06,888 root         DEBUG    finished reading logs
+2022-07-13 05:17:06,888 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [cheyenne]
+2022-07-13 05:17:06,888 root         INFO     finished summaries for branch develop on machine cheyenne
+2022-07-13 05:17:06,888 root         INFO     generating summaries for develop [chianti]
+2022-07-13 05:17:06,888 root         DEBUG    checking out chianti
+2022-07-13 05:17:21,022 root         DEBUG    pulling from chianti
+2022-07-13 05:17:21,844 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
+2022-07-13 05:17:21,844 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:17:21,844 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:21,909 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:21,932 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:21,952 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:21,981 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:21,986 root         DEBUG    matching logs: 4
+2022-07-13 05:17:21,986 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:22,036 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:22,040 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:22,045 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:22,050 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:22,054 root         DEBUG    matching summaries: 4
+2022-07-13 05:17:22,107 root         DEBUG    finished reading logs
+2022-07-13 05:17:24,892 root         DEBUG    checking out summary
+2022-07-13 05:17:24,892 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 4
+2022-07-13 05:17:24,903 root         INFO     processed [4] rows
+2022-07-13 05:17:24,903 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:24,907 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:24,920 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:24,933 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:24,933 root         DEBUG    adding all modified files in summary
+2022-07-13 05:17:24,938 root         DEBUG    committing to summary
+2022-07-13 05:17:24,944 root         INFO     On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 
-2022-07-13 04:16:58,377 root         INFO     finished summary for B:develop M: chianti [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:16:58,377 root         INFO     processing hash [1: v8.4.0b03]
-2022-07-13 04:16:58,377 root         DEBUG    generating summary for [v8.4.0b03]
-2022-07-13 04:16:58,377 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:58,494 root         DEBUG    matching logs: 0
-2022-07-13 04:16:58,494 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:58,559 root         DEBUG    matching summaries: 0
-2022-07-13 04:16:58,559 root         DEBUG    finished reading logs
-2022-07-13 04:16:58,560 root         INFO     missing summary data for v8.4.0b03, develop [chianti]
-2022-07-13 04:16:58,560 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
-2022-07-13 04:16:58,560 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
-2022-07-13 04:16:58,560 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:58,672 root         DEBUG    matching logs: 0
-2022-07-13 04:16:58,672 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:58,731 root         DEBUG    matching summaries: 0
-2022-07-13 04:16:58,731 root         DEBUG    finished reading logs
-2022-07-13 04:16:58,731 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [chianti]
-2022-07-13 04:16:58,731 root         INFO     processing hash [3: v8.4.0b01-4-g992fafa]
-2022-07-13 04:16:58,731 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
-2022-07-13 04:16:58,731 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:58,835 root         DEBUG    matching logs: 0
-2022-07-13 04:16:58,835 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:58,903 root         DEBUG    matching summaries: 0
-2022-07-13 04:16:58,903 root         DEBUG    finished reading logs
-2022-07-13 04:16:58,903 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [chianti]
-2022-07-13 04:16:58,903 root         INFO     processing hash [4: v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:16:58,904 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:16:58,904 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:16:59,010 root         DEBUG    matching logs: 0
-2022-07-13 04:16:59,010 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:16:59,072 root         DEBUG    matching summaries: 0
-2022-07-13 04:16:59,072 root         DEBUG    finished reading logs
-2022-07-13 04:16:59,072 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [chianti]
-2022-07-13 04:16:59,072 root         INFO     finished summaries for branch develop on machine chianti
-2022-07-13 04:16:59,072 root         INFO     generating summaries for develop [cori]
-2022-07-13 04:16:59,072 root         DEBUG    checking out cori
-2022-07-13 04:17:03,921 root         DEBUG    pulling from cori
-2022-07-13 04:17:04,595 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
-2022-07-13 04:17:04,595 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:17:04,595 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:04,650 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:04,719 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:04,741 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:04,756 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:04,762 root         DEBUG    matching logs: 4
-2022-07-13 04:17:04,762 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:04,804 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:04,808 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:04,813 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:04,817 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:04,821 root         DEBUG    matching summaries: 4
-2022-07-13 04:17:04,868 root         DEBUG    finished reading logs
-2022-07-13 04:17:06,660 root         DEBUG    checking out summary
-2022-07-13 04:17:06,660 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 4
-2022-07-13 04:17:06,671 root         INFO     processed [4] rows
-2022-07-13 04:17:06,671 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:06,675 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:06,689 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:06,703 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:06,704 root         DEBUG    adding all modified files in summary
-2022-07-13 04:17:06,708 root         DEBUG    committing to summary
-2022-07-13 04:17:06,713 root         INFO     On branch main
+2022-07-13 05:17:25,368 root         INFO     finished summary for B:develop M: chianti [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:17:25,369 root         INFO     processing hash [1: v8.4.0b03]
+2022-07-13 05:17:25,369 root         DEBUG    generating summary for [v8.4.0b03]
+2022-07-13 05:17:25,369 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:25,489 root         DEBUG    matching logs: 0
+2022-07-13 05:17:25,489 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:25,553 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:25,553 root         DEBUG    finished reading logs
+2022-07-13 05:17:25,553 root         INFO     missing summary data for v8.4.0b03, develop [chianti]
+2022-07-13 05:17:25,553 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
+2022-07-13 05:17:25,553 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
+2022-07-13 05:17:25,553 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:25,671 root         DEBUG    matching logs: 0
+2022-07-13 05:17:25,671 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:25,738 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:25,738 root         DEBUG    finished reading logs
+2022-07-13 05:17:25,738 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [chianti]
+2022-07-13 05:17:25,738 root         INFO     processing hash [3: v8.4.0b01-4-g992fafa]
+2022-07-13 05:17:25,738 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
+2022-07-13 05:17:25,738 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:25,853 root         DEBUG    matching logs: 0
+2022-07-13 05:17:25,853 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:25,919 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:25,919 root         DEBUG    finished reading logs
+2022-07-13 05:17:25,919 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [chianti]
+2022-07-13 05:17:25,919 root         INFO     processing hash [4: v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:17:25,919 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:17:25,919 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:26,036 root         DEBUG    matching logs: 0
+2022-07-13 05:17:26,036 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:26,094 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:26,094 root         DEBUG    finished reading logs
+2022-07-13 05:17:26,094 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [chianti]
+2022-07-13 05:17:26,094 root         INFO     finished summaries for branch develop on machine chianti
+2022-07-13 05:17:26,094 root         INFO     generating summaries for develop [cori]
+2022-07-13 05:17:26,094 root         DEBUG    checking out cori
+2022-07-13 05:17:31,737 root         DEBUG    pulling from cori
+2022-07-13 05:17:32,237 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
+2022-07-13 05:17:32,238 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:17:32,238 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:32,290 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:32,315 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:32,336 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:32,351 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:32,356 root         DEBUG    matching logs: 4
+2022-07-13 05:17:32,356 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:32,406 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:32,410 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:32,415 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:32,419 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:32,424 root         DEBUG    matching summaries: 4
+2022-07-13 05:17:32,469 root         DEBUG    finished reading logs
+2022-07-13 05:17:34,228 root         DEBUG    checking out summary
+2022-07-13 05:17:34,228 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 4
+2022-07-13 05:17:34,240 root         INFO     processed [4] rows
+2022-07-13 05:17:34,240 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:34,244 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:34,257 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:34,270 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:17:34,271 root         DEBUG    adding all modified files in summary
+2022-07-13 05:17:34,277 root         DEBUG    committing to summary
+2022-07-13 05:17:34,283 root         INFO     On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 
-2022-07-13 04:17:07,138 root         INFO     finished summary for B:develop M: cori [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:17:07,139 root         INFO     processing hash [1: v8.4.0b03]
-2022-07-13 04:17:07,139 root         DEBUG    generating summary for [v8.4.0b03]
-2022-07-13 04:17:07,139 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:07,239 root         DEBUG    matching logs: 0
-2022-07-13 04:17:07,239 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:07,298 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:07,298 root         DEBUG    finished reading logs
-2022-07-13 04:17:07,298 root         INFO     missing summary data for v8.4.0b03, develop [cori]
-2022-07-13 04:17:07,298 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
-2022-07-13 04:17:07,298 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
-2022-07-13 04:17:07,298 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:07,407 root         DEBUG    matching logs: 0
-2022-07-13 04:17:07,407 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:07,469 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:07,469 root         DEBUG    finished reading logs
-2022-07-13 04:17:07,469 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [cori]
-2022-07-13 04:17:07,469 root         INFO     processing hash [3: v8.4.0b02]
-2022-07-13 04:17:07,469 root         DEBUG    generating summary for [v8.4.0b02]
-2022-07-13 04:17:07,469 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:07,566 root         DEBUG    matching logs: 0
-2022-07-13 04:17:07,566 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:07,620 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:07,620 root         DEBUG    finished reading logs
-2022-07-13 04:17:07,620 root         INFO     missing summary data for v8.4.0b02, develop [cori]
-2022-07-13 04:17:07,620 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
-2022-07-13 04:17:07,620 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
-2022-07-13 04:17:07,621 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:07,721 root         DEBUG    matching logs: 0
-2022-07-13 04:17:07,721 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:07,778 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:07,778 root         DEBUG    finished reading logs
-2022-07-13 04:17:07,778 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [cori]
-2022-07-13 04:17:07,778 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:17:07,778 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:17:07,778 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:07,884 root         DEBUG    matching logs: 0
-2022-07-13 04:17:07,884 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:07,938 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:07,938 root         DEBUG    finished reading logs
-2022-07-13 04:17:07,938 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [cori]
-2022-07-13 04:17:07,938 root         INFO     finished summaries for branch develop on machine cori
-2022-07-13 04:17:07,939 root         INFO     generating summaries for develop [discover]
-2022-07-13 04:17:07,939 root         DEBUG    checking out discover
-2022-07-13 04:17:19,126 root         DEBUG    pulling from discover
-2022-07-13 04:17:19,712 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
-2022-07-13 04:17:19,712 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:17:19,712 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:19,790 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:19,818 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:19,845 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,109 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,132 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,160 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,193 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,222 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,251 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,275 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,291 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,306 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,330 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,357 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,363 root         DEBUG    matching logs: 14
-2022-07-13 04:17:20,363 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:20,398 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,402 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,406 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,410 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,415 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,419 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,422 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,425 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,429 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,434 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,437 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,441 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,445 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,449 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:20,456 root         DEBUG    matching summaries: 14
-2022-07-13 04:17:20,674 root         DEBUG    finished reading logs
-2022-07-13 04:17:28,028 root         DEBUG    checking out summary
-2022-07-13 04:17:28,028 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 14
-2022-07-13 04:17:28,042 root         INFO     processed [14] rows
-2022-07-13 04:17:28,043 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:28,046 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:28,060 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:28,074 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:28,074 root         DEBUG    adding all modified files in summary
-2022-07-13 04:17:28,079 root         DEBUG    committing to summary
-2022-07-13 04:17:28,085 root         INFO     On branch main
+2022-07-13 05:17:34,679 root         INFO     finished summary for B:develop M: cori [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:17:34,680 root         INFO     processing hash [1: v8.4.0b03]
+2022-07-13 05:17:34,680 root         DEBUG    generating summary for [v8.4.0b03]
+2022-07-13 05:17:34,680 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:34,794 root         DEBUG    matching logs: 0
+2022-07-13 05:17:34,794 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:34,860 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:34,860 root         DEBUG    finished reading logs
+2022-07-13 05:17:34,860 root         INFO     missing summary data for v8.4.0b03, develop [cori]
+2022-07-13 05:17:34,860 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
+2022-07-13 05:17:34,860 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
+2022-07-13 05:17:34,861 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:34,967 root         DEBUG    matching logs: 0
+2022-07-13 05:17:34,967 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:35,033 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:35,033 root         DEBUG    finished reading logs
+2022-07-13 05:17:35,033 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [cori]
+2022-07-13 05:17:35,033 root         INFO     processing hash [3: v8.4.0b02]
+2022-07-13 05:17:35,033 root         DEBUG    generating summary for [v8.4.0b02]
+2022-07-13 05:17:35,033 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:35,129 root         DEBUG    matching logs: 0
+2022-07-13 05:17:35,129 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:35,183 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:35,183 root         DEBUG    finished reading logs
+2022-07-13 05:17:35,183 root         INFO     missing summary data for v8.4.0b02, develop [cori]
+2022-07-13 05:17:35,183 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
+2022-07-13 05:17:35,183 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
+2022-07-13 05:17:35,183 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:35,279 root         DEBUG    matching logs: 0
+2022-07-13 05:17:35,279 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:35,336 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:35,336 root         DEBUG    finished reading logs
+2022-07-13 05:17:35,336 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [cori]
+2022-07-13 05:17:35,336 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:17:35,336 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:17:35,336 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:35,430 root         DEBUG    matching logs: 0
+2022-07-13 05:17:35,430 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:35,486 root         DEBUG    matching summaries: 0
+2022-07-13 05:17:35,486 root         DEBUG    finished reading logs
+2022-07-13 05:17:35,486 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [cori]
+2022-07-13 05:17:35,486 root         INFO     finished summaries for branch develop on machine cori
+2022-07-13 05:17:35,486 root         INFO     generating summaries for develop [discover]
+2022-07-13 05:17:35,486 root         DEBUG    checking out discover
+2022-07-13 05:17:49,698 root         DEBUG    pulling from discover
+2022-07-13 05:17:54,093 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
+2022-07-13 05:17:54,093 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:17:54,093 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:17:54,162 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,186 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,201 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,216 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,230 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,255 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,277 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,296 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,315 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,332 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,340 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,348 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,369 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,389 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,394 root         DEBUG    matching logs: 14
+2022-07-13 05:17:54,395 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:17:54,429 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,433 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,438 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,442 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,445 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,450 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,454 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:17:54,460 root         DEBUG    matching summaries: 7
+2022-07-13 05:17:54,656 root         DEBUG    finished reading logs
+2022-07-13 05:18:01,504 root         DEBUG    checking out summary
+2022-07-13 05:18:01,504 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 7
+2022-07-13 05:18:01,520 root         INFO     processed [7] rows
+2022-07-13 05:18:01,520 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:01,524 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:01,539 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:01,554 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:01,554 root         DEBUG    adding all modified files in summary
+2022-07-13 05:18:01,576 root         DEBUG    committing to summary
+2022-07-13 05:18:02,402 root         INFO     finished summary for B:develop M: discover [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:18:02,402 root         INFO     processing hash [1: v8.4.0b03]
+2022-07-13 05:18:02,402 root         DEBUG    generating summary for [v8.4.0b03]
+2022-07-13 05:18:02,402 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:02,659 root         DEBUG    matching logs: 0
+2022-07-13 05:18:02,659 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:02,740 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:02,740 root         DEBUG    finished reading logs
+2022-07-13 05:18:02,740 root         INFO     missing summary data for v8.4.0b03, develop [discover]
+2022-07-13 05:18:02,740 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
+2022-07-13 05:18:02,740 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
+2022-07-13 05:18:02,740 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:03,000 root         DEBUG    matching logs: 0
+2022-07-13 05:18:03,001 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:03,081 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:03,081 root         DEBUG    finished reading logs
+2022-07-13 05:18:03,081 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [discover]
+2022-07-13 05:18:03,081 root         INFO     processing hash [3: v8.4.0b02]
+2022-07-13 05:18:03,081 root         DEBUG    generating summary for [v8.4.0b02]
+2022-07-13 05:18:03,081 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:03,322 root         DEBUG    matching logs: 0
+2022-07-13 05:18:03,322 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:03,407 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:03,407 root         DEBUG    finished reading logs
+2022-07-13 05:18:03,407 root         INFO     missing summary data for v8.4.0b02, develop [discover]
+2022-07-13 05:18:03,407 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
+2022-07-13 05:18:03,407 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
+2022-07-13 05:18:03,407 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:03,658 root         DEBUG    matching logs: 0
+2022-07-13 05:18:03,658 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:03,745 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:03,745 root         DEBUG    finished reading logs
+2022-07-13 05:18:03,745 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [discover]
+2022-07-13 05:18:03,745 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:18:03,745 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:18:03,745 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:04,007 root         DEBUG    matching logs: 0
+2022-07-13 05:18:04,007 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:04,088 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:04,088 root         DEBUG    finished reading logs
+2022-07-13 05:18:04,088 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [discover]
+2022-07-13 05:18:04,088 root         INFO     finished summaries for branch develop on machine discover
+2022-07-13 05:18:04,088 root         INFO     generating summaries for develop [gaea]
+2022-07-13 05:18:04,088 root         DEBUG    checking out gaea
+2022-07-13 05:18:13,109 root         DEBUG    pulling from gaea
+2022-07-13 05:18:17,832 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
+2022-07-13 05:18:17,832 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:18:17,832 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:17,911 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:17,926 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:17,950 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:17,959 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:17,971 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:17,989 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:18,007 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:18,015 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:18,021 root         DEBUG    matching logs: 8
+2022-07-13 05:18:18,021 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:18,072 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:18,075 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:18,079 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:18,081 root         DEBUG    matching summaries: 3
+2022-07-13 05:18:18,174 root         DEBUG    finished reading logs
+2022-07-13 05:18:21,361 root         DEBUG    checking out summary
+2022-07-13 05:18:21,361 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 3
+2022-07-13 05:18:21,384 root         INFO     processed [3] rows
+2022-07-13 05:18:21,384 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:21,387 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:21,401 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:21,415 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:21,415 root         DEBUG    adding all modified files in summary
+2022-07-13 05:18:21,422 root         DEBUG    committing to summary
+2022-07-13 05:18:22,095 root         INFO     finished summary for B:develop M: gaea [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:18:22,095 root         INFO     processing hash [1: v8.4.0b03]
+2022-07-13 05:18:22,095 root         DEBUG    generating summary for [v8.4.0b03]
+2022-07-13 05:18:22,095 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:22,250 root         DEBUG    matching logs: 0
+2022-07-13 05:18:22,250 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:22,317 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:22,317 root         DEBUG    finished reading logs
+2022-07-13 05:18:22,317 root         INFO     missing summary data for v8.4.0b03, develop [gaea]
+2022-07-13 05:18:22,317 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
+2022-07-13 05:18:22,317 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
+2022-07-13 05:18:22,317 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:22,463 root         DEBUG    matching logs: 0
+2022-07-13 05:18:22,463 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:22,524 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:22,524 root         DEBUG    finished reading logs
+2022-07-13 05:18:22,524 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [gaea]
+2022-07-13 05:18:22,524 root         INFO     processing hash [3: v8.4.0b02]
+2022-07-13 05:18:22,524 root         DEBUG    generating summary for [v8.4.0b02]
+2022-07-13 05:18:22,524 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:22,662 root         DEBUG    matching logs: 0
+2022-07-13 05:18:22,662 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:22,719 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:22,719 root         DEBUG    finished reading logs
+2022-07-13 05:18:22,719 root         INFO     missing summary data for v8.4.0b02, develop [gaea]
+2022-07-13 05:18:22,719 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
+2022-07-13 05:18:22,719 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
+2022-07-13 05:18:22,719 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:22,864 root         DEBUG    matching logs: 0
+2022-07-13 05:18:22,864 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:22,921 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:22,921 root         DEBUG    finished reading logs
+2022-07-13 05:18:22,921 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [gaea]
+2022-07-13 05:18:22,921 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:18:22,921 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:18:22,921 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:23,065 root         DEBUG    matching logs: 0
+2022-07-13 05:18:23,065 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:23,112 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:23,112 root         DEBUG    finished reading logs
+2022-07-13 05:18:23,112 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [gaea]
+2022-07-13 05:18:23,112 root         INFO     finished summaries for branch develop on machine gaea
+2022-07-13 05:18:23,112 root         INFO     generating summaries for develop [gaffney]
+2022-07-13 05:18:23,112 root         DEBUG    checking out gaffney
+2022-07-13 05:18:23,541 root         DEBUG    pulling from gaffney
+2022-07-13 05:18:24,027 root         INFO     finished summaries for branch develop on machine gaffney
+2022-07-13 05:18:24,028 root         INFO     generating summaries for develop [hera]
+2022-07-13 05:18:24,028 root         DEBUG    checking out hera
+2022-07-13 05:18:33,358 root         DEBUG    pulling from hera
+2022-07-13 05:18:33,873 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
+2022-07-13 05:18:33,873 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:18:33,873 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:33,937 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:33,958 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:33,975 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:33,997 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,012 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,033 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,058 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,078 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,108 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,142 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,162 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,189 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,194 root         DEBUG    matching logs: 12
+2022-07-13 05:18:34,194 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:34,249 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,254 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,260 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,263 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,268 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,273 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,278 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,284 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,289 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,293 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:34,302 root         DEBUG    matching summaries: 10
+2022-07-13 05:18:34,467 root         DEBUG    finished reading logs
+2022-07-13 05:18:39,784 root         DEBUG    checking out summary
+2022-07-13 05:18:39,785 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 10
+2022-07-13 05:18:39,796 root         INFO     processed [10] rows
+2022-07-13 05:18:39,796 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:39,800 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:39,814 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:39,827 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:18:39,828 root         DEBUG    adding all modified files in summary
+2022-07-13 05:18:39,833 root         DEBUG    committing to summary
+2022-07-13 05:18:39,841 root         INFO     On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 
-2022-07-13 04:17:28,495 root         INFO     finished summary for B:develop M: discover [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:17:28,495 root         INFO     processing hash [1: v8.4.0b03]
-2022-07-13 04:17:28,495 root         DEBUG    generating summary for [v8.4.0b03]
-2022-07-13 04:17:28,495 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:28,780 root         DEBUG    matching logs: 0
-2022-07-13 04:17:28,780 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:28,880 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:28,880 root         DEBUG    finished reading logs
-2022-07-13 04:17:28,880 root         INFO     missing summary data for v8.4.0b03, develop [discover]
-2022-07-13 04:17:28,880 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
-2022-07-13 04:17:28,880 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
-2022-07-13 04:17:28,880 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:29,169 root         DEBUG    matching logs: 0
-2022-07-13 04:17:29,169 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:29,258 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:29,258 root         DEBUG    finished reading logs
-2022-07-13 04:17:29,258 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [discover]
-2022-07-13 04:17:29,258 root         INFO     processing hash [3: v8.4.0b02]
-2022-07-13 04:17:29,258 root         DEBUG    generating summary for [v8.4.0b02]
-2022-07-13 04:17:29,258 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:29,522 root         DEBUG    matching logs: 0
-2022-07-13 04:17:29,522 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:29,615 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:29,616 root         DEBUG    finished reading logs
-2022-07-13 04:17:29,616 root         INFO     missing summary data for v8.4.0b02, develop [discover]
-2022-07-13 04:17:29,616 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
-2022-07-13 04:17:29,616 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
-2022-07-13 04:17:29,616 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:29,891 root         DEBUG    matching logs: 0
-2022-07-13 04:17:29,891 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:29,980 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:29,981 root         DEBUG    finished reading logs
-2022-07-13 04:17:29,981 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [discover]
-2022-07-13 04:17:29,981 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:17:29,981 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:17:29,981 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:30,274 root         DEBUG    matching logs: 0
-2022-07-13 04:17:30,274 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:30,366 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:30,366 root         DEBUG    finished reading logs
-2022-07-13 04:17:30,366 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [discover]
-2022-07-13 04:17:30,366 root         INFO     finished summaries for branch develop on machine discover
-2022-07-13 04:17:30,366 root         INFO     generating summaries for develop [gaea]
-2022-07-13 04:17:30,366 root         DEBUG    checking out gaea
-2022-07-13 04:17:40,057 root         DEBUG    pulling from gaea
-2022-07-13 04:17:40,577 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
-2022-07-13 04:17:40,577 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:17:40,577 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:40,631 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,655 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,678 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,693 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,711 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,738 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,762 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,778 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,783 root         DEBUG    matching logs: 8
-2022-07-13 04:17:40,783 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:40,824 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,828 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,832 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,835 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,840 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,844 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,848 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,851 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:40,856 root         DEBUG    matching summaries: 8
-2022-07-13 04:17:40,950 root         DEBUG    finished reading logs
-2022-07-13 04:17:44,143 root         DEBUG    checking out summary
-2022-07-13 04:17:44,144 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 8
-2022-07-13 04:17:44,158 root         INFO     processed [8] rows
-2022-07-13 04:17:44,159 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:44,163 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:44,177 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:44,190 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:17:44,191 root         DEBUG    adding all modified files in summary
-2022-07-13 04:17:44,196 root         DEBUG    committing to summary
-2022-07-13 04:17:44,201 root         INFO     On branch main
-Your branch is up to date with 'origin/main'.
-
-nothing to commit, working tree clean
-
-2022-07-13 04:17:44,616 root         INFO     finished summary for B:develop M: gaea [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:17:44,616 root         INFO     processing hash [1: v8.4.0b03]
-2022-07-13 04:17:44,616 root         DEBUG    generating summary for [v8.4.0b03]
-2022-07-13 04:17:44,616 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:44,854 root         DEBUG    matching logs: 0
-2022-07-13 04:17:44,854 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:44,926 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:44,926 root         DEBUG    finished reading logs
-2022-07-13 04:17:44,926 root         INFO     missing summary data for v8.4.0b03, develop [gaea]
-2022-07-13 04:17:44,926 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
-2022-07-13 04:17:44,926 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
-2022-07-13 04:17:44,926 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:45,090 root         DEBUG    matching logs: 0
-2022-07-13 04:17:45,090 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:45,167 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:45,167 root         DEBUG    finished reading logs
-2022-07-13 04:17:45,167 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [gaea]
-2022-07-13 04:17:45,167 root         INFO     processing hash [3: v8.4.0b02]
-2022-07-13 04:17:45,167 root         DEBUG    generating summary for [v8.4.0b02]
-2022-07-13 04:17:45,167 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:45,332 root         DEBUG    matching logs: 0
-2022-07-13 04:17:45,332 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:45,411 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:45,411 root         DEBUG    finished reading logs
-2022-07-13 04:17:45,411 root         INFO     missing summary data for v8.4.0b02, develop [gaea]
-2022-07-13 04:17:45,411 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
-2022-07-13 04:17:45,411 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
-2022-07-13 04:17:45,411 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:45,578 root         DEBUG    matching logs: 0
-2022-07-13 04:17:45,578 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:45,650 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:45,650 root         DEBUG    finished reading logs
-2022-07-13 04:17:45,650 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [gaea]
-2022-07-13 04:17:45,650 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:17:45,650 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:17:45,650 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:45,811 root         DEBUG    matching logs: 0
-2022-07-13 04:17:45,811 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:45,891 root         DEBUG    matching summaries: 0
-2022-07-13 04:17:45,892 root         DEBUG    finished reading logs
-2022-07-13 04:17:45,892 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [gaea]
-2022-07-13 04:17:45,892 root         INFO     finished summaries for branch develop on machine gaea
-2022-07-13 04:17:45,892 root         INFO     generating summaries for develop [gaffney]
-2022-07-13 04:17:45,892 root         DEBUG    checking out gaffney
-2022-07-13 04:17:47,236 root         DEBUG    pulling from gaffney
-2022-07-13 04:17:47,658 root         INFO     finished summaries for branch develop on machine gaffney
-2022-07-13 04:17:47,658 root         INFO     generating summaries for develop [hera]
-2022-07-13 04:17:47,658 root         DEBUG    checking out hera
-2022-07-13 04:17:54,641 root         DEBUG    pulling from hera
-2022-07-13 04:17:55,206 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
-2022-07-13 04:17:55,206 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:17:55,206 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:17:55,265 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,286 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,304 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,326 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,344 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,364 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,387 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,407 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,437 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,471 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,489 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,518 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,523 root         DEBUG    matching logs: 12
-2022-07-13 04:17:55,523 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:17:55,569 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,573 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,578 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,582 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,586 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,590 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,594 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,599 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,603 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,607 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:17:55,613 root         DEBUG    matching summaries: 10
-2022-07-13 04:17:55,783 root         DEBUG    finished reading logs
-2022-07-13 04:18:01,289 root         DEBUG    checking out summary
-2022-07-13 04:18:01,290 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 10
-2022-07-13 04:18:01,305 root         INFO     processed [10] rows
-2022-07-13 04:18:01,305 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:01,309 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:01,323 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:01,337 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:01,338 root         DEBUG    adding all modified files in summary
-2022-07-13 04:18:01,343 root         DEBUG    committing to summary
-2022-07-13 04:18:01,348 root         INFO     On branch main
-Your branch is up to date with 'origin/main'.
-
-nothing to commit, working tree clean
-
-2022-07-13 04:18:01,778 root         INFO     finished summary for B:develop M: hera [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:18:01,778 root         INFO     processing hash [1: v8.4.0b03]
-2022-07-13 04:18:01,778 root         DEBUG    generating summary for [v8.4.0b03]
-2022-07-13 04:18:01,778 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:02,022 root         DEBUG    matching logs: 0
-2022-07-13 04:18:02,022 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:02,101 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:02,101 root         DEBUG    finished reading logs
-2022-07-13 04:18:02,101 root         INFO     missing summary data for v8.4.0b03, develop [hera]
-2022-07-13 04:18:02,101 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
-2022-07-13 04:18:02,101 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
-2022-07-13 04:18:02,101 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:02,374 root         DEBUG    matching logs: 0
-2022-07-13 04:18:02,375 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:02,453 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:02,453 root         DEBUG    finished reading logs
-2022-07-13 04:18:02,453 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [hera]
-2022-07-13 04:18:02,453 root         INFO     processing hash [3: v8.4.0b02]
-2022-07-13 04:18:02,453 root         DEBUG    generating summary for [v8.4.0b02]
-2022-07-13 04:18:02,453 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:02,699 root         DEBUG    matching logs: 0
-2022-07-13 04:18:02,699 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:02,780 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:02,780 root         DEBUG    finished reading logs
-2022-07-13 04:18:02,780 root         INFO     missing summary data for v8.4.0b02, develop [hera]
-2022-07-13 04:18:02,780 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
-2022-07-13 04:18:02,780 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
-2022-07-13 04:18:02,780 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:03,079 root         DEBUG    matching logs: 0
-2022-07-13 04:18:03,079 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:03,164 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:03,164 root         DEBUG    finished reading logs
-2022-07-13 04:18:03,164 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [hera]
-2022-07-13 04:18:03,164 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:18:03,164 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:18:03,164 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:03,419 root         DEBUG    matching logs: 0
-2022-07-13 04:18:03,420 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:03,503 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:03,503 root         DEBUG    finished reading logs
-2022-07-13 04:18:03,503 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [hera]
-2022-07-13 04:18:03,503 root         INFO     finished summaries for branch develop on machine hera
-2022-07-13 04:18:03,504 root         INFO     generating summaries for develop [izumi]
-2022-07-13 04:18:03,504 root         DEBUG    checking out izumi
-2022-07-13 04:18:12,347 root         DEBUG    pulling from izumi
-2022-07-13 04:18:12,836 root         INFO     processing hash [0: v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:18:12,836 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:18:12,836 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:12,903 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:12,923 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:12,941 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:12,961 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:12,989 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:13,018 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:13,023 root         DEBUG    matching logs: 6
-2022-07-13 04:18:13,023 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:13,064 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:13,067 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:13,070 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:13,074 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:13,076 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:13,079 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
-2022-07-13 04:18:13,083 root         DEBUG    matching summaries: 6
-2022-07-13 04:18:13,178 root         DEBUG    finished reading logs
-2022-07-13 04:18:13,178 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/intel/20.0.1/g/mvapich2/20.0.1/summary.dat]
-2022-07-13 04:18:13,178 root         ERROR    message: invalid literal for int() with base 10: 'system'
-2022-07-13 04:18:13,178 root         ERROR    line being parsed: system tests did not complete
-2022-07-13 04:18:13,178 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/intel/20.0.1/g/mvapich2/20.0.1/summary.dat]
-2022-07-13 04:18:13,178 root         ERROR    message: invalid literal for int() with base 10: 'No'
-2022-07-13 04:18:13,179 root         ERROR    line being parsed: No examples ran
-2022-07-13 04:18:13,233 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/intel/20.0.1/O/mvapich2/20.0.1/summary.dat]
-2022-07-13 04:18:13,233 root         ERROR    message: invalid literal for int() with base 10: 'system'
-2022-07-13 04:18:13,233 root         ERROR    line being parsed: system tests did not complete
-2022-07-13 04:18:13,233 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/intel/20.0.1/O/mvapich2/20.0.1/summary.dat]
-2022-07-13 04:18:13,233 root         ERROR    message: invalid literal for int() with base 10: 'No'
-2022-07-13 04:18:13,233 root         ERROR    line being parsed: No examples ran
-2022-07-13 04:18:13,268 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/gfortran/9.3.0/g/mvapich2/9.3.0/summary.dat]
-2022-07-13 04:18:13,268 root         ERROR    message: invalid literal for int() with base 10: 'system'
-2022-07-13 04:18:13,268 root         ERROR    line being parsed: system tests did not complete
-2022-07-13 04:18:13,268 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/gfortran/9.3.0/g/mvapich2/9.3.0/summary.dat]
-2022-07-13 04:18:13,268 root         ERROR    message: invalid literal for int() with base 10: 'No'
-2022-07-13 04:18:13,268 root         ERROR    line being parsed: No examples ran
-2022-07-13 04:18:13,308 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/g/mvapich2/6.2/summary.dat]
-2022-07-13 04:18:13,308 root         ERROR    message: invalid literal for int() with base 10: 'unit'
-2022-07-13 04:18:13,308 root         ERROR    line being parsed: unit tests did not complete
-2022-07-13 04:18:13,308 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/g/mvapich2/6.2/summary.dat]
-2022-07-13 04:18:13,308 root         ERROR    message: invalid literal for int() with base 10: 'system'
-2022-07-13 04:18:13,308 root         ERROR    line being parsed: system tests did not complete
-2022-07-13 04:18:13,308 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/g/mvapich2/6.2/summary.dat]
-2022-07-13 04:18:13,308 root         ERROR    message: invalid literal for int() with base 10: 'No'
-2022-07-13 04:18:13,308 root         ERROR    line being parsed: No examples ran
-2022-07-13 04:18:13,343 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/gfortran/9.3.0/O/mvapich2/9.3.0/summary.dat]
-2022-07-13 04:18:13,343 root         ERROR    message: invalid literal for int() with base 10: 'unit'
-2022-07-13 04:18:13,343 root         ERROR    line being parsed: unit tests did not complete
-2022-07-13 04:18:13,343 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/gfortran/9.3.0/O/mvapich2/9.3.0/summary.dat]
-2022-07-13 04:18:13,343 root         ERROR    message: invalid literal for int() with base 10: 'system'
-2022-07-13 04:18:13,343 root         ERROR    line being parsed: system tests did not complete
-2022-07-13 04:18:13,343 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/gfortran/9.3.0/O/mvapich2/9.3.0/summary.dat]
-2022-07-13 04:18:13,343 root         ERROR    message: invalid literal for int() with base 10: 'No'
-2022-07-13 04:18:13,343 root         ERROR    line being parsed: No examples ran
-2022-07-13 04:18:13,377 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/O/mvapich2/6.2/summary.dat]
-2022-07-13 04:18:13,377 root         ERROR    message: invalid literal for int() with base 10: 'unit'
-2022-07-13 04:18:13,378 root         ERROR    line being parsed: unit tests did not complete
-2022-07-13 04:18:13,378 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/O/mvapich2/6.2/summary.dat]
-2022-07-13 04:18:13,378 root         ERROR    message: invalid literal for int() with base 10: 'system'
-2022-07-13 04:18:13,378 root         ERROR    line being parsed: system tests did not complete
-2022-07-13 04:18:13,378 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/O/mvapich2/6.2/summary.dat]
-2022-07-13 04:18:13,378 root         ERROR    message: invalid literal for int() with base 10: 'No'
-2022-07-13 04:18:13,378 root         ERROR    line being parsed: No examples ran
-2022-07-13 04:18:13,410 root         DEBUG    checking out summary
-2022-07-13 04:18:13,410 root         DEBUG    writing archive v8.4.0b01-2-gf0d4ab2 length 6
-2022-07-13 04:18:13,416 root         INFO     processed [6] rows
-2022-07-13 04:18:13,417 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b01-2-gf0d4ab2
-2022-07-13 04:18:13,417 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b01-2-gf0d4ab2
-2022-07-13 04:18:13,419 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b01-2-gf0d4ab2
-2022-07-13 04:18:13,421 root         DEBUG    writing file csv[6]: /tmp/esmf_branch_summary_space/develop/v8.4.0b01-2-gf0d4ab2
-2022-07-13 04:18:13,421 root         DEBUG    adding all modified files in summary
-2022-07-13 04:18:13,425 root         DEBUG    committing to summary
-2022-07-13 04:18:14,175 root         INFO     finished summary for B:develop M: izumi [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:18:14,176 root         INFO     finished summaries for branch develop on machine izumi
-2022-07-13 04:18:14,176 root         INFO     generating summaries for develop [jet]
-2022-07-13 04:18:14,176 root         DEBUG    checking out jet
-2022-07-13 04:18:14,863 root         DEBUG    pulling from jet
-2022-07-13 04:18:15,342 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
-2022-07-13 04:18:15,342 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:18:15,343 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:15,397 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
-2022-07-13 04:18:15,417 root         DEBUG    matching logs: 1
-2022-07-13 04:18:15,417 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:15,465 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:15,480 root         DEBUG    finished reading logs
-2022-07-13 04:18:15,480 root         INFO     missing summary data for v8.4.0b03-3-g14a79d5, develop [jet]
-2022-07-13 04:18:15,480 root         INFO     processing hash [1: v8.4.0b03]
-2022-07-13 04:18:15,480 root         DEBUG    generating summary for [v8.4.0b03]
-2022-07-13 04:18:15,480 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:15,545 root         DEBUG    matching logs: 0
-2022-07-13 04:18:15,545 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:15,585 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:15,585 root         DEBUG    finished reading logs
-2022-07-13 04:18:15,585 root         INFO     missing summary data for v8.4.0b03, develop [jet]
-2022-07-13 04:18:15,585 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
-2022-07-13 04:18:15,585 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
-2022-07-13 04:18:15,585 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:15,639 root         DEBUG    matching logs: 0
-2022-07-13 04:18:15,639 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:15,683 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:15,683 root         DEBUG    finished reading logs
-2022-07-13 04:18:15,683 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [jet]
-2022-07-13 04:18:15,683 root         INFO     processing hash [3: v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:18:15,683 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:18:15,683 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:15,737 root         DEBUG    matching logs: 0
-2022-07-13 04:18:15,737 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:15,776 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:15,776 root         DEBUG    finished reading logs
-2022-07-13 04:18:15,776 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [jet]
-2022-07-13 04:18:15,777 root         INFO     finished summaries for branch develop on machine jet
-2022-07-13 04:18:15,777 root         INFO     generating summaries for develop [onyx]
-2022-07-13 04:18:15,777 root         DEBUG    checking out onyx
-2022-07-13 04:18:15,831 root         DEBUG    pulling from onyx
-2022-07-13 04:18:16,291 root         INFO     finished summaries for branch develop on machine onyx
-2022-07-13 04:18:16,291 root         INFO     generating summaries for develop [orion]
-2022-07-13 04:18:16,291 root         DEBUG    checking out orion
-2022-07-13 04:18:22,632 root         DEBUG    pulling from orion
-2022-07-13 04:18:23,123 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
-2022-07-13 04:18:23,123 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:18:23,124 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:23,176 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,197 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,216 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,246 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,270 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,284 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,289 root         DEBUG    matching logs: 6
-2022-07-13 04:18:23,289 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:23,331 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,336 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,340 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,344 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,348 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,351 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:23,357 root         DEBUG    matching summaries: 6
-2022-07-13 04:18:23,437 root         DEBUG    finished reading logs
-2022-07-13 04:18:25,835 root         DEBUG    checking out summary
-2022-07-13 04:18:25,836 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 6
-2022-07-13 04:18:25,843 root         INFO     processed [6] rows
-2022-07-13 04:18:25,843 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:25,847 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:25,862 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:25,877 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
-2022-07-13 04:18:25,877 root         DEBUG    adding all modified files in summary
-2022-07-13 04:18:25,883 root         DEBUG    committing to summary
-2022-07-13 04:18:26,546 root         INFO     finished summary for B:develop M: orion [v8.4.0b03-3-g14a79d5]
-2022-07-13 04:18:26,546 root         INFO     processing hash [1: v8.4.0b03]
-2022-07-13 04:18:26,546 root         DEBUG    generating summary for [v8.4.0b03]
-2022-07-13 04:18:26,546 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:26,692 root         DEBUG    matching logs: 0
-2022-07-13 04:18:26,692 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:26,756 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:26,756 root         DEBUG    finished reading logs
-2022-07-13 04:18:26,756 root         INFO     missing summary data for v8.4.0b03, develop [orion]
-2022-07-13 04:18:26,756 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
-2022-07-13 04:18:26,756 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
-2022-07-13 04:18:26,757 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:26,884 root         DEBUG    matching logs: 0
-2022-07-13 04:18:26,884 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:26,958 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:26,958 root         DEBUG    finished reading logs
-2022-07-13 04:18:26,958 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [orion]
-2022-07-13 04:18:26,958 root         INFO     processing hash [3: v8.4.0b02]
-2022-07-13 04:18:26,958 root         DEBUG    generating summary for [v8.4.0b02]
-2022-07-13 04:18:26,958 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:27,092 root         DEBUG    matching logs: 0
-2022-07-13 04:18:27,092 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:27,166 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:27,166 root         DEBUG    finished reading logs
-2022-07-13 04:18:27,166 root         INFO     missing summary data for v8.4.0b02, develop [orion]
-2022-07-13 04:18:27,166 root         INFO     processing hash [4: v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:18:27,166 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
-2022-07-13 04:18:27,166 root         DEBUG    fetching matching logs to determine build pass/fail
-2022-07-13 04:18:27,300 root         DEBUG    matching logs: 0
-2022-07-13 04:18:27,300 root         DEBUG    fetching matching summaries to extract test results
-2022-07-13 04:18:27,364 root         DEBUG    matching summaries: 0
-2022-07-13 04:18:27,364 root         DEBUG    finished reading logs
-2022-07-13 04:18:27,364 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [orion]
-2022-07-13 04:18:27,364 root         INFO     finished summaries for branch develop on machine orion
-2022-07-13 04:18:27,364 root         DEBUG    pushing to summary
+2022-07-13 05:18:40,254 root         INFO     finished summary for B:develop M: hera [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:18:40,255 root         INFO     processing hash [1: v8.4.0b03]
+2022-07-13 05:18:40,255 root         DEBUG    generating summary for [v8.4.0b03]
+2022-07-13 05:18:40,255 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:40,519 root         DEBUG    matching logs: 0
+2022-07-13 05:18:40,519 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:40,601 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:40,601 root         DEBUG    finished reading logs
+2022-07-13 05:18:40,601 root         INFO     missing summary data for v8.4.0b03, develop [hera]
+2022-07-13 05:18:40,601 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
+2022-07-13 05:18:40,601 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
+2022-07-13 05:18:40,601 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:40,851 root         DEBUG    matching logs: 0
+2022-07-13 05:18:40,851 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:40,932 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:40,932 root         DEBUG    finished reading logs
+2022-07-13 05:18:40,932 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [hera]
+2022-07-13 05:18:40,932 root         INFO     processing hash [3: v8.4.0b02]
+2022-07-13 05:18:40,932 root         DEBUG    generating summary for [v8.4.0b02]
+2022-07-13 05:18:40,932 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:41,167 root         DEBUG    matching logs: 0
+2022-07-13 05:18:41,167 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:41,253 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:41,253 root         DEBUG    finished reading logs
+2022-07-13 05:18:41,253 root         INFO     missing summary data for v8.4.0b02, develop [hera]
+2022-07-13 05:18:41,253 root         INFO     processing hash [4: v8.4.0b01-4-g992fafa]
+2022-07-13 05:18:41,253 root         DEBUG    generating summary for [v8.4.0b01-4-g992fafa]
+2022-07-13 05:18:41,253 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:41,494 root         DEBUG    matching logs: 0
+2022-07-13 05:18:41,494 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:41,586 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:41,586 root         DEBUG    finished reading logs
+2022-07-13 05:18:41,586 root         INFO     missing summary data for v8.4.0b01-4-g992fafa, develop [hera]
+2022-07-13 05:18:41,586 root         INFO     processing hash [5: v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:18:41,586 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:18:41,587 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:41,826 root         DEBUG    matching logs: 0
+2022-07-13 05:18:41,826 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:41,907 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:41,907 root         DEBUG    finished reading logs
+2022-07-13 05:18:41,907 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [hera]
+2022-07-13 05:18:41,908 root         INFO     finished summaries for branch develop on machine hera
+2022-07-13 05:18:41,908 root         INFO     generating summaries for develop [izumi]
+2022-07-13 05:18:41,908 root         DEBUG    checking out izumi
+2022-07-13 05:18:51,126 root         DEBUG    pulling from izumi
+2022-07-13 05:18:51,975 root         INFO     processing hash [0: v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:18:51,976 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:18:51,976 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:52,049 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,068 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,085 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,106 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,135 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,161 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,167 root         DEBUG    matching logs: 6
+2022-07-13 05:18:52,167 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:52,215 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,218 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,221 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,224 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,228 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,230 root         DEBUG    matched other version v8.4.0b01-2-gf0d4ab211d
+2022-07-13 05:18:52,234 root         DEBUG    matching summaries: 6
+2022-07-13 05:18:52,324 root         DEBUG    finished reading logs
+2022-07-13 05:18:52,324 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/gfortran/9.3.0/O/mvapich2/9.3.0/summary.dat]
+2022-07-13 05:18:52,324 root         ERROR    message: invalid literal for int() with base 10: 'unit'
+2022-07-13 05:18:52,324 root         ERROR    line being parsed: unit tests did not complete
+2022-07-13 05:18:52,324 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/gfortran/9.3.0/O/mvapich2/9.3.0/summary.dat]
+2022-07-13 05:18:52,324 root         ERROR    message: invalid literal for int() with base 10: 'system'
+2022-07-13 05:18:52,324 root         ERROR    line being parsed: system tests did not complete
+2022-07-13 05:18:52,324 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/gfortran/9.3.0/O/mvapich2/9.3.0/summary.dat]
+2022-07-13 05:18:52,324 root         ERROR    message: invalid literal for int() with base 10: 'No'
+2022-07-13 05:18:52,324 root         ERROR    line being parsed: No examples ran
+2022-07-13 05:18:52,525 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/O/mvapich2/6.2/summary.dat]
+2022-07-13 05:18:52,525 root         ERROR    message: invalid literal for int() with base 10: 'unit'
+2022-07-13 05:18:52,525 root         ERROR    line being parsed: unit tests did not complete
+2022-07-13 05:18:52,525 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/O/mvapich2/6.2/summary.dat]
+2022-07-13 05:18:52,525 root         ERROR    message: invalid literal for int() with base 10: 'system'
+2022-07-13 05:18:52,525 root         ERROR    line being parsed: system tests did not complete
+2022-07-13 05:18:52,525 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/O/mvapich2/6.2/summary.dat]
+2022-07-13 05:18:52,525 root         ERROR    message: invalid literal for int() with base 10: 'No'
+2022-07-13 05:18:52,525 root         ERROR    line being parsed: No examples ran
+2022-07-13 05:18:52,578 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/gfortran/9.3.0/g/mvapich2/9.3.0/summary.dat]
+2022-07-13 05:18:52,578 root         ERROR    message: invalid literal for int() with base 10: 'system'
+2022-07-13 05:18:52,578 root         ERROR    line being parsed: system tests did not complete
+2022-07-13 05:18:52,578 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/gfortran/9.3.0/g/mvapich2/9.3.0/summary.dat]
+2022-07-13 05:18:52,578 root         ERROR    message: invalid literal for int() with base 10: 'No'
+2022-07-13 05:18:52,578 root         ERROR    line being parsed: No examples ran
+2022-07-13 05:18:52,631 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/intel/20.0.1/O/mvapich2/20.0.1/summary.dat]
+2022-07-13 05:18:52,632 root         ERROR    message: invalid literal for int() with base 10: 'system'
+2022-07-13 05:18:52,632 root         ERROR    line being parsed: system tests did not complete
+2022-07-13 05:18:52,632 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/intel/20.0.1/O/mvapich2/20.0.1/summary.dat]
+2022-07-13 05:18:52,632 root         ERROR    message: invalid literal for int() with base 10: 'No'
+2022-07-13 05:18:52,632 root         ERROR    line being parsed: No examples ran
+2022-07-13 05:18:52,687 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/intel/20.0.1/g/mvapich2/20.0.1/summary.dat]
+2022-07-13 05:18:52,688 root         ERROR    message: invalid literal for int() with base 10: 'system'
+2022-07-13 05:18:52,688 root         ERROR    line being parsed: system tests did not complete
+2022-07-13 05:18:52,688 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/intel/20.0.1/g/mvapich2/20.0.1/summary.dat]
+2022-07-13 05:18:52,688 root         ERROR    message: invalid literal for int() with base 10: 'No'
+2022-07-13 05:18:52,688 root         ERROR    line being parsed: No examples ran
+2022-07-13 05:18:52,743 root         ERROR    found no numeric unit test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/g/mvapich2/6.2/summary.dat]
+2022-07-13 05:18:52,743 root         ERROR    message: invalid literal for int() with base 10: 'unit'
+2022-07-13 05:18:52,743 root         ERROR    line being parsed: unit tests did not complete
+2022-07-13 05:18:52,743 root         ERROR    found no numeric system test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/g/mvapich2/6.2/summary.dat]
+2022-07-13 05:18:52,743 root         ERROR    message: invalid literal for int() with base 10: 'system'
+2022-07-13 05:18:52,744 root         ERROR    line being parsed: system tests did not complete
+2022-07-13 05:18:52,744 root         ERROR    found no numeric example test results, setting to fail [/scratch1/NCEPDEV/nems/role.esmfmaint/esmf-test-artifacts/develop/izumi/nag/6.2/g/mvapich2/6.2/summary.dat]
+2022-07-13 05:18:52,744 root         ERROR    message: invalid literal for int() with base 10: 'No'
+2022-07-13 05:18:52,744 root         ERROR    line being parsed: No examples ran
+2022-07-13 05:18:52,799 root         DEBUG    checking out summary
+2022-07-13 05:18:52,799 root         DEBUG    writing archive v8.4.0b01-2-gf0d4ab2 length 6
+2022-07-13 05:18:52,815 root         INFO     processed [6] rows
+2022-07-13 05:18:52,815 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b01-2-gf0d4ab2
+2022-07-13 05:18:52,816 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b01-2-gf0d4ab2
+2022-07-13 05:18:52,818 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b01-2-gf0d4ab2
+2022-07-13 05:18:52,819 root         DEBUG    writing file csv[6]: /tmp/esmf_branch_summary_space/develop/v8.4.0b01-2-gf0d4ab2
+2022-07-13 05:18:52,819 root         DEBUG    adding all modified files in summary
+2022-07-13 05:18:52,825 root         DEBUG    committing to summary
+2022-07-13 05:18:53,515 root         INFO     finished summary for B:develop M: izumi [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:18:53,515 root         INFO     finished summaries for branch develop on machine izumi
+2022-07-13 05:18:53,515 root         INFO     generating summaries for develop [jet]
+2022-07-13 05:18:53,515 root         DEBUG    checking out jet
+2022-07-13 05:18:54,452 root         DEBUG    pulling from jet
+2022-07-13 05:18:55,768 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
+2022-07-13 05:18:55,768 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:18:55,768 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:55,833 root         DEBUG    matched other version v8.4.0b03-3-g14a79d558f
+2022-07-13 05:18:55,840 root         DEBUG    matching logs: 1
+2022-07-13 05:18:55,840 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:55,898 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:55,901 root         DEBUG    finished reading logs
+2022-07-13 05:18:55,901 root         INFO     missing summary data for v8.4.0b03-3-g14a79d5, develop [jet]
+2022-07-13 05:18:55,901 root         INFO     processing hash [1: v8.4.0b03]
+2022-07-13 05:18:55,901 root         DEBUG    generating summary for [v8.4.0b03]
+2022-07-13 05:18:55,901 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:55,958 root         DEBUG    matching logs: 0
+2022-07-13 05:18:55,958 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:56,013 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:56,014 root         DEBUG    finished reading logs
+2022-07-13 05:18:56,014 root         INFO     missing summary data for v8.4.0b03, develop [jet]
+2022-07-13 05:18:56,014 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
+2022-07-13 05:18:56,014 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
+2022-07-13 05:18:56,014 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:56,066 root         DEBUG    matching logs: 0
+2022-07-13 05:18:56,066 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:56,122 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:56,123 root         DEBUG    finished reading logs
+2022-07-13 05:18:56,123 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [jet]
+2022-07-13 05:18:56,123 root         INFO     processing hash [3: v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:18:56,123 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:18:56,123 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:18:56,181 root         DEBUG    matching logs: 0
+2022-07-13 05:18:56,181 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:18:56,235 root         DEBUG    matching summaries: 0
+2022-07-13 05:18:56,235 root         DEBUG    finished reading logs
+2022-07-13 05:18:56,235 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [jet]
+2022-07-13 05:18:56,235 root         INFO     finished summaries for branch develop on machine jet
+2022-07-13 05:18:56,235 root         INFO     generating summaries for develop [onyx]
+2022-07-13 05:18:56,236 root         DEBUG    checking out onyx
+2022-07-13 05:18:56,285 root         DEBUG    pulling from onyx
+2022-07-13 05:18:56,775 root         INFO     finished summaries for branch develop on machine onyx
+2022-07-13 05:18:56,775 root         INFO     generating summaries for develop [orion]
+2022-07-13 05:18:56,776 root         DEBUG    checking out orion
+2022-07-13 05:19:04,090 root         DEBUG    pulling from orion
+2022-07-13 05:19:04,595 root         INFO     processing hash [0: v8.4.0b03-3-g14a79d5]
+2022-07-13 05:19:04,595 root         DEBUG    generating summary for [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:19:04,595 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:19:04,655 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,677 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,698 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,727 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,750 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,765 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,770 root         DEBUG    matching logs: 6
+2022-07-13 05:19:04,770 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:19:04,819 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,824 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,829 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,832 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,837 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,841 root         DEBUG    matched other version v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:04,846 root         DEBUG    matching summaries: 6
+2022-07-13 05:19:04,927 root         DEBUG    finished reading logs
+2022-07-13 05:19:07,656 root         DEBUG    checking out summary
+2022-07-13 05:19:07,656 root         DEBUG    writing archive v8.4.0b03-3-g14a79d5 length 6
+2022-07-13 05:19:07,670 root         INFO     processed [6] rows
+2022-07-13 05:19:07,670 root         DEBUG    writing files /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:07,673 root         DEBUG    writing file -latest: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:07,687 root         DEBUG    writing file md: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:07,701 root         DEBUG    writing file csv[79]: /tmp/esmf_branch_summary_space/develop/v8.4.0b03-3-g14a79d5
+2022-07-13 05:19:07,702 root         DEBUG    adding all modified files in summary
+2022-07-13 05:19:07,708 root         DEBUG    committing to summary
+2022-07-13 05:19:08,334 root         INFO     finished summary for B:develop M: orion [v8.4.0b03-3-g14a79d5]
+2022-07-13 05:19:08,335 root         INFO     processing hash [1: v8.4.0b03]
+2022-07-13 05:19:08,335 root         DEBUG    generating summary for [v8.4.0b03]
+2022-07-13 05:19:08,335 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:19:08,480 root         DEBUG    matching logs: 0
+2022-07-13 05:19:08,480 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:19:08,561 root         DEBUG    matching summaries: 0
+2022-07-13 05:19:08,561 root         DEBUG    finished reading logs
+2022-07-13 05:19:08,561 root         INFO     missing summary data for v8.4.0b03, develop [orion]
+2022-07-13 05:19:08,561 root         INFO     processing hash [2: v8.4.0b02-7-g9328c9b]
+2022-07-13 05:19:08,561 root         DEBUG    generating summary for [v8.4.0b02-7-g9328c9b]
+2022-07-13 05:19:08,561 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:19:08,706 root         DEBUG    matching logs: 0
+2022-07-13 05:19:08,707 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:19:08,771 root         DEBUG    matching summaries: 0
+2022-07-13 05:19:08,772 root         DEBUG    finished reading logs
+2022-07-13 05:19:08,772 root         INFO     missing summary data for v8.4.0b02-7-g9328c9b, develop [orion]
+2022-07-13 05:19:08,772 root         INFO     processing hash [3: v8.4.0b02]
+2022-07-13 05:19:08,772 root         DEBUG    generating summary for [v8.4.0b02]
+2022-07-13 05:19:08,772 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:19:08,918 root         DEBUG    matching logs: 0
+2022-07-13 05:19:08,918 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:19:08,988 root         DEBUG    matching summaries: 0
+2022-07-13 05:19:08,988 root         DEBUG    finished reading logs
+2022-07-13 05:19:08,988 root         INFO     missing summary data for v8.4.0b02, develop [orion]
+2022-07-13 05:19:08,988 root         INFO     processing hash [4: v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:19:08,988 root         DEBUG    generating summary for [v8.4.0b01-2-gf0d4ab2]
+2022-07-13 05:19:08,988 root         DEBUG    fetching matching logs to determine build pass/fail
+2022-07-13 05:19:09,134 root         DEBUG    matching logs: 0
+2022-07-13 05:19:09,134 root         DEBUG    fetching matching summaries to extract test results
+2022-07-13 05:19:09,204 root         DEBUG    matching summaries: 0
+2022-07-13 05:19:09,204 root         DEBUG    finished reading logs
+2022-07-13 05:19:09,204 root         INFO     missing summary data for v8.4.0b01-2-gf0d4ab2, develop [orion]
+2022-07-13 05:19:09,204 root         INFO     finished summaries for branch develop on machine orion
+2022-07-13 05:19:09,204 root         DEBUG    pushing to summary
